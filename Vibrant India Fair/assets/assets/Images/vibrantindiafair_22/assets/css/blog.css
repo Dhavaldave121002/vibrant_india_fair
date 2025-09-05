@@ -1,0 +1,117 @@
+/* --- Blog Card Section --- */
+/* left Part  */
+.blog-left-part-body {
+  /* background-color: var(--secondary-color); */
+  padding: 10px;
+}
+.blog-card-box {
+  width: 100%; /* or fixed like 500px if you want */
+  height: 400px; /* Set your desired fixed height */
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.blog-card-box .blog-card-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-decoration: none;
+}
+.blog-card-box .blog-card-img-box {
+  width: 100%;
+  height: 200px; /* Fixed height for image box */
+  overflow: hidden;
+}
+.blog-card-img-box .blog-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the box without distortion */
+  border-radius: 5px;
+}
+.blog-card-date {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--dark-color);
+  letter-spacing: 2px;
+}
+.blog-hidden-reed-more {
+  display: none;
+}
+.read-more-btn {
+  font-size: 12px !important;
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  position: relative;
+}
+.blog-btn-box {
+  position: relative;
+  padding: 5px 0px;
+}
+.blog-btn-box .blog-btn-link {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: var(--light-color);
+  text-decoration: none;
+  background-color: var(--primary-color);
+}
+/* End left Part  */
+
+/* Right Part */
+.blog-right-part-body {
+  position: sticky;
+  top: 100px;
+  z-index: 1;
+}
+.blog-right-part-box {
+  padding: 10px;
+  /* background-color: var(--secondary-color); */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.blog-post-box .blog-post-img-box {
+  max-width: 300px;
+}
+.blog-post-img-box .blog-post-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.blog-card-recent-post-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--dark-color);
+  text-decoration: none;
+}
+.blog-card-recent-post-link:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.blog-tags-btn-box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.blog-tags-btn-box .blog-tags-btn-link {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--light-color);
+  text-decoration: none;
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+/* End Right Part */
+/* --- End Blog Card Section --- */

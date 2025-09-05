@@ -1,0 +1,117 @@
+/* .exibitor-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+} */
+
+.form-label.form-title.primary-title::before {
+  display: none !important;
+  content: "";
+  width: 0;
+}
+.form-label.form-title.primary-title {
+  padding: 0;
+  color: var(--primary-color);
+}
+.form-title-sub.primary-title {
+  font-size: 18px;
+  padding: 0;
+}
+.form-title-sub.primary-title::before {
+  display: none !important;
+  content: "";
+  width: 0;
+}
+.section-text-title.impo {
+  font-size: 15px;
+}
+.radio-title {
+  font-size: 16px;
+  font-weight: 450;
+}
+.inputForm-border {
+  border: 1px solid var(--primary-color);
+}
+.inputForm-border::placeholder {
+  font-size: 15px;
+}
+.exhibit-btn {
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  width: 150px;
+  font-size: 17px;
+  padding: 10px;
+  margin: 20px;
+  border: none;
+}
+.exhibit-btn:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  outline: 2px solid var(--primary-color);
+}
+.form-container {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 20px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.exhibition-table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.exhibition-table-td,
+.exhibition-table-th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+.more-btn {
+  background-color: var(--primary-color);
+  border: none;
+  height: 40px;
+  width: 50px;
+  color: var(--light-color);
+}
+.less-btn {
+  background-color: var(--secondary-color);
+  border: none;
+  height: 40px;
+  width: 50px;
+}
+@media (min-width: 768px) {
+  .form-container {
+    margin: 0px 30px 0px 30px;
+  }
+}
+@media (max-width: 600px) {
+  .secondary-title.exhibit-heading {
+    font-size: 13px;
+  }
+  .form-title {
+    font-size: 15px;
+  }
+  .form-control {
+    font-size: 14px;
+  }
+  .radio-title {
+    font-size: 16px;
+    font-weight: 450;
+  }
+  .exhibit-btn {
+    width: 150px;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .detail-gender {
+    flex-direction: column-reverse;
+  }
+  .select-gender {
+    width: 100%;
+  }
+  .form-label.form-title.primary-title {
+    font-size: 20px;
+  }
+}

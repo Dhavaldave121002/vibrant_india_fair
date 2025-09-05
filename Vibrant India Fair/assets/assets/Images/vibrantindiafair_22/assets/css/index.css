@@ -1,0 +1,451 @@
+/* ----- Banner Video Section -----*/
+/*.banner-box{
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.banner-thumbnail{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.banner-thumbnail video{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+} */
+.banner-thumbnail {
+  max-width: 100%;
+}
+.banner-thumbnail video {
+  width: 100%;
+  height: 100%;
+}
+/* ----- End Banner Section ----- */
+
+/* ----- OWL Carousel ----- */
+.owl-carousel {
+  padding: 10px;
+  /* background-color: var(--primary-color); */
+}
+.owl-carousel-box {
+  position: relative;
+}
+.owl-nav-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  padding: 0px 65px;
+  display: none;
+  z-index: 1;
+  /* display: none; */
+}
+.owl-carousel-box:hover .owl-nav-box{
+  display: flex;
+}
+.owl-pre-next-btn .owl-prev-next-btn-icon{
+  width: 100%;
+  height: 100%;
+}
+.owl-nav-box .owl-pre-next-btn {
+  border: none;
+  width: 36px;
+  padding: 4px 7px;
+  background-color: var(--primary-color);
+  transition: 1s ease-in-out;
+}
+/* .owl-nav-box .owl-pre-btn:hover {
+  background-color: var(--secondary-color);
+} */
+
+
+.owl-nav {
+  display: none;
+}
+.owl-dots {
+  display: none;
+}
+/* Event Cart Box  */
+.event-main-cart {
+  position: relative;
+}
+.event-details-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 35%;
+  background-color: var(--primary-color);
+}
+.event-city-date-box {
+  padding: 0px 0px 5px 0px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+.event-city {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: myFont;
+  letter-spacing: 1px;
+  color: var(--light-color);
+}
+.event-date {
+  font-size: 10px;
+  font-weight: 500;
+  font-family: myFont;
+  color: var(--light-color);
+}
+.event-location-center {
+  font-size: 10px;
+  font-weight: 500;
+  font-family: myFont;
+  color: var(--light-color);
+  padding: 5px 0px;
+}
+/* ----- End OWL Carousel ----- */
+
+/* ----- Offer Section ----- */
+.offer-left-part{
+  padding: 10px;
+}
+.section-text-content .offer-pro-deals{
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.offer-right-part{
+  padding: 10px;
+}
+.offer-unlist{
+  list-style: square;
+}
+.offer-list{
+  font-size: 14px;
+  padding: 5px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+/* ----- End Offer Section ----- */
+
+/* ----- Visit Exhibit Section ----- */
+/* Visit Part */
+.visit-exhibit-main {
+  background-color: var(--secondary-color);
+  padding: 10px 0px;
+}
+.visit-main-box .visit-attachment {
+  max-width: 500px;
+}
+.visit-attachment picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.visit-content-second {
+  font-size: 12px;
+  padding: 5px 0px;
+  margin: 0;
+  font-weight: 600;
+}
+.section-text-title .visit-link {
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+/* .visit-link::before{
+   content: "";
+   top: 0;
+   left: -20px;
+   background: url("Assets/Image/Icon/Fabicon.png");
+   position: absolute;
+   transform: translateY(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px; 
+    height: 20px;
+    display: inline-block;
+    z-index: 2;
+ } */
+.visit-content-third {
+  font-size: 12px;
+  padding: 5px 0px;
+  font-weight: 600;
+}
+
+/* ----- End Visit Exhibit Section ----- */
+
+/* ----- Events gallery ----- */
+ .event-gallery-box {
+      position: relative;
+      overflow: hidden;
+    }
+    .event-gallery-box .event-gallery-img {
+      width: 100%;
+      display: block;
+    }
+    .event-gallery-box::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80%;
+      height: 80%;
+      opacity: 0;
+      border: 3px solid var(--primary-color);
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      transform: translate(-50%, -50%) scale(0.8);
+      pointer-events: none;
+    }
+    .event-gallery-box:hover::after {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .event-gallery-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #0000005c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .event-gallery-box:hover .event-gallery-overlay {
+      opacity: 1;
+    }
+
+    .event-gallery-overlay .event-gallery-search {
+      color: var(--primary-color);
+      font-size: 15px;
+    }
+  .mfp-bottom-bar .mfp-counter{
+    display: none;
+  } 
+
+
+    /* .event-gallery-box {
+      max-width: 100%;
+    }
+
+    .event-gallery-box img {
+      width: 100%;
+      height: auto;
+    }*/
+     
+   
+    
+/* ----- End Events Gallery ----- */
+
+/* ----- About and Exhibitor Profile Section ----- */
+ /* About Section  */
+ .about-left-part{
+  padding: 5px;
+ }
+ 
+ .section-text-content .about-location-bold{
+  font-weight: 600;
+ }
+ .about-reedmore-btn{
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none !important;
+  color: var(--primary-color) !important;
+  position: relative;
+ }
+
+.about-reedmore-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: var(--primary-color);
+    transition: width 0.4s ease-in-out;
+}
+
+.about-reedmore-btn:hover::after {
+    width: 100%;
+}
+ /* End About Section */
+/* ----- End About and Exhibitor Profile Section ----- */
+
+/* ----- Remarks and Supported Company Section ----- */
+/* Left Part Remarks of Exhibitors */
+ .remarks-supported-main{
+      padding: 10px;
+    }
+.remarks-exhibitors{
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+.remarks-main-box{
+  padding: 2px;
+}
+ .remarks-left-part {
+      padding: 10px;
+    }
+.testimonial-img-box{
+  max-width: 100px;
+}
+.testimonial-details-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px 0 5px 0;
+}
+.testimonial-background-color{
+  background-color: var(--secondary-color);
+  position: absolute;
+  width: 100%;
+  height: 46%;
+  top: 0;
+  z-index: -1;
+}
+.testimonial-background-color::after{
+   content: "";
+  position: absolute;
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -2;
+  transform: skewY(350deg);
+}
+.testimonial-details-box::after{
+  content: "";
+  position: absolute;
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 50%;
+  top: 0;
+  z-index: -2;
+  transform: skewY(9deg);
+}
+.remarks-paragraph{
+  font-size: 12px;
+}
+.testimonial-img-box .testimonial-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid var(--light-color);
+}
+.testimonial-details-box .remarks-work-box{
+  padding: 10px;
+  text-align: center;
+}
+.remarks-owl-nav-box{
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.remarks-owl-pre-btn{
+  border: none;
+  font-size: 14px;
+  border-radius: 3px;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+}
+.remarks-owl-next-btn{
+  border: none;
+  font-size: 14px;
+  border-radius: 3px;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+
+}
+/* End Left Part Remarks of Exhibitors */
+
+/* Right Part Supported Company Secion */
+.supported-owl{
+  margin: 0;
+  padding: 10px 0;
+}
+    .supported-img-box{
+      max-width: 100px;
+      margin: 7px;
+    }
+    .supported-img-box .supported-company-logo{
+      width: 100%;
+      height: 100%;
+      padding: 5px;
+      border: 1px solid var(--secondary-color);
+      transition: transform 0.7s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+     .supported-img-box .supported-company-logo:hover{
+      border: 1px solid var(--primary-color);
+      transform: scale(1.1); /* Slightly enlarges the image */
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+     }
+    
+/*  End Right Part Supported Company Section  */
+/* ----- End Remarks and Supported Section ----- */
+
+
+/* Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+  /* Banner Thumbnail */
+  /* .banner-thumbnail{
+    margin-top: 10%;
+  } */
+  /* OWL Carousel  */
+  .owl-nav-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    padding: 0px;
+  }
+  /* Visit Exhibit Section  */
+  .event-details-box {
+    padding: 3px 10px !important;
+  }
+}
+
+/* Small Devices (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Banner Thumbnail */
+  /* .banner-thumbnail{
+    margin-top: 7%;
+  } */
+}
+/* Medium Devices (769px to 992px) */
+@media (max-width: 992px) {
+  
+  /* Visit Exhibit Section  */
+  .event-details-box {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--primary-color);
+  }
+}
+
+
+
+

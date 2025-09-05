@@ -1,0 +1,106 @@
+/* --- Visiting Hours Timing Section --- */
+.visiting-timinig-main-box{
+    /* background-color: var(--secondary-color); */
+    padding: 20px;
+}
+.visiting-timing-left-part-box .visiting-left-part-btn-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.visiting-left-part-btn-box .visiting-left-part-btn{
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    width: 100%;
+    color: var(--dark-color);
+    background-color: var(--secondary-color);
+}
+ .visiting-timing-active {
+    color: var(--light-color) !important;
+	background-color: var(--primary-color) !important;
+	transform: translateY(-2px);
+    position: relative;
+}
+ .visiting-timing-active::before {
+    content: "";   
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    right: -20px;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid rgb(0 0 0 / 0%);
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-top: 10px solid var(--primary-color);
+    border-bottom: 0px; 
+    transform: rotate(-90deg);
+}
+.visiting-details-show-box{
+    display: none;
+	width: 100%;
+	/* background-color: var(--primary-color); */
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	border-radius: 10px;
+	animation: visitingFadeIn 0.5s;
+    position: relative;
+}
+.visiting-details-show-box::before{
+    content: "";
+    position: absolute;
+    background-image: url('../images/icon/time-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+@keyframes visitingFadeIn {
+	from {
+        opacity: 0;
+        transform: translateY(10px);
+	}
+	to {
+        opacity: 1;
+        transform: translateY(0);
+	}
+}
+ 
+/* Medium Devices (769px to 992px) */
+@media (max-width: 992px) {
+    .visiting-timing-active::before {
+    display: none;
+}
+}
+/* --- End Visiting Hours Timing Section --- */
+
+
+/* --- Powering Events Section --- */
+    .visiting-right-part-video-box{
+        max-width: 600px;
+    }
+    .visiting-right-part-video-box .visiting-right-part-video{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+/* --- End Powering Events Section --- */
+
+
+/* --- Stage Pre Event Section --- */
+     .pre-event-main-img-box .pre-event-img-box{
+        max-width: 300px;
+     }
+     .pre-event-img-box .pre-event-img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+     }
+/* --- End Stage Pre Event Section --- */

@@ -1,0 +1,76 @@
+/* --- How to design your exhibitor floor plan & layout --- */
+    .delhi-floor-plan-design-back-img-body{
+        background-image: url('../images/floor-plan-design.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 30px 10px 80px 10px;
+    }
+    .delhi-floor-plan-design-heading-box{
+        max-width: 700px;
+        background-color: #00000090;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .delhi-floor-plan-design-heading-box .delhi-floor-plan-design-heading{
+        font-size: 45px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        color: var(--light-color);
+    }
+    .delhi-floor-plan-design-text-content{
+        background-color: var(--secondary-color);
+        padding: 10px;
+        margin-top: -20px;
+        border-radius: 10px;
+    }
+/* Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+     .delhi-floor-plan-design-text-content-box .delhi-floor-plan-design-text-content{
+        font-size: 25px;
+     }
+     
+    .delhi-floor-plan-design-heading-box .delhi-floor-plan-design-heading{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        color: var(--light-color);
+    }
+}
+
+/* Small Devices (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .delhi-floor-plan-design-heading-box .delhi-floor-plan-design-heading{
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        color: var(--light-color);
+    }
+}
+/* --- End How to design your exhibitor floor plan & layout --- */
+
+
+/* --- Floor Plan Delhi ---  */ 
+    .delhi-floor-plan-delhi-body{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .delhi-floor-plan-delhi-body .delhi-floor-plan-delhi-img-box{
+        max-width: 600px;
+        /*transform: rotate(-90deg);*/
+    }   
+    .delhi-floor-plan-delhi-img-box .delhi-floor-plan-delhi-img{
+        width: 100%;
+        height: 100%;
+    }  
+    .delhi-floor-plan-banner-box .delhi-floor-plan-thumbnail{
+        width: 100%;
+        padding-bottom: 32%;
+        position: relative;
+        display: block;
+        overflow: hidden;
+    }
+/* --- End Floor Plan Delhi ---  */ 

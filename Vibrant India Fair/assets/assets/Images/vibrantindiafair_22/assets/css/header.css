@@ -1,0 +1,507 @@
+/* ----- Header ----- */
+.navbar-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--primary-color);
+  /* position: sticky; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  /* background: #ffffff;  */
+  z-index: 1000;
+}
+
+.dropdown-submenu {
+  display: none;
+}
+.menubar-list-menu .drop-down-submenu-main-box {
+  position: absolute;
+  padding: 27px 0px 0px 0px;
+  background-color: transparent;
+}
+.menubar-unlist-box .menubar-list-menu:hover .dropdown-submenu {
+  display: block;
+  /* position: absolute; */
+  background-color: var(--primary-color);
+  margin-top: 7px;
+  z-index: 2;
+  padding: 10px;
+}
+.dropdown-submenu .submenu-unlist {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-submenu .submenu-unlist .submenu-list-menu {
+  display: block;
+  padding: 5px;
+  position: relative;
+}
+.submenu-unlist .submenu-list-menu.header-active {
+  background-color: #cce9e942 !important;
+  color: var(--light-color) !important;
+  border-radius: 5px;
+}
+.menubar-unlist-box
+  .menubar-list-menu
+  .dropdown-submenu
+  .submenu-unlist
+  .submenu-list-menu
+  .drop-link-menubar {
+  color: var(--light-color);
+  text-decoration: none;
+  font-family: myFont;
+  font-size: 14px;
+}
+
+.dropdown-submenu .submenu-unlist .submenu-list-menu:hover .drop-link-menubar {
+  color: var(--secondary-color) !important;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+/* ----- Logo Box ----- */
+.logo-box {
+  max-width: 80px;
+  padding: 10px;
+}
+.logo-box a {
+  text-decoration: none;
+}
+.logo-box img {
+  width: 100%;
+  height: 100%;
+}
+/* ----- End Logo Box ----- */
+
+/* ----- Menubar Box ----- */
+.header-menubar-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-menubar-box .menubar-unlist-box {
+  display: contents;
+  list-style: none;
+  padding: 5px;
+}
+.menubar-unlist-box .menubar-list-menu {
+  padding: 6px;
+}
+.menubar-unlist-box .menubar-list-menu .link-menubar {
+  text-decoration: none;
+  color: var(--light-color);
+  font-family: myFont;
+  font-size: 14px;
+}
+.menubar-unlist-box .menubar-list-menu:hover .link-menubar {
+  text-decoration: none;
+  border-top: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+/* End Menubar Box ----- */
+
+/* ----- Header Form BTN Box -----*/
+.header-form-btn-box {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-form-btn-box .form-unlist-box {
+  display: contents;
+}
+.form-unlist-box .form-list-btn {
+  list-style: none;
+  padding: 7px;
+}
+.form-unlist-box .form-list-btn .link-form-btn {
+  text-decoration: none;
+  color: var(--light-color);
+  border: 1px solid var(--secondary-color);
+  padding: 5px;
+  font-family: myFont;
+  font-size: 12px;
+}
+
+.form-unlist-box .form-list-btn:hover .link-form-btn {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+}
+/* --- Mega Menu --- */
+.form-unlist-box .form-list-btn .visitor-megamenu-main-body {
+  display: none;
+}
+.form-unlist-box .form-list-btn:hover .visitor-megamenu-main-body {
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  margin-top: 8px;
+  z-index: 2;
+  padding: 2.5% 2.5% 0.5% 2.5%;
+  width: 60%;
+  right: 0%;
+}
+.visitor-megamenu-main-body .visitor-megamenu-sub-box {
+  /* background-color: var(--secondary-color); */
+  background-image: url("../images/VISIT.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  padding: 20px 0px;
+  position: relative;
+}
+.visitor-megamenu-main-body .visitor-megamenu-sub-box::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/icon/content-marketing-cta-bg.webp");
+  background-color: #277474b0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.visitor-megamenu-main-body .exhibit-megamenu-sub-box {
+  /* background-color: var(--secondary-color); */
+  background-image: url("../images/exhibit-registration.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  padding: 20px 0px;
+  position: relative;
+}
+.visitor-megamenu-main-body .exhibit-megamenu-sub-box::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/icon/content-marketing-cta-bg.webp");
+  background-color: #277474b0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.visitor-primary-heading {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px 0px;
+  letter-spacing: 1px;
+  color: var(--light-color);
+  position: relative;
+}
+.megamenu-content-details-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.megamenu-logo-img-box {
+  max-width: 80px;
+}
+.megamenu-logo-img-box .megamenu-logo-img {
+  width: 100%;
+  height: 100%;
+}
+.menubar-registration-btn-box .menubar-registration-link {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 0px 5px;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+/* --- End Mega Menu --- */
+
+/* ----- End Header Form BTN Box ----- */
+
+/* Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+  .navbar-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 0px 22px;
+  }
+  .logo-box {
+    max-width: 46px !important;
+    padding: 6px !important;
+  }
+  .menubar-unlist-box .menubar-list-menu .link-menubar {
+    font-size: 14px;
+    width: 100%;
+    padding: 5px 10px;
+  }
+  .header-form-btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    z-index: 9999;
+    background-color: var(--dark-color);
+  }
+  .form-unlist-box .form-list-btn {
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .form-unlist-box .form-list-btn .link-form-btn {
+    background-color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    display: block;
+    padding: 10px;
+  }
+  .form-unlist-box .form-list-btn .link-form-btn:first-child {
+    border-right: 1px solid var(--light-color);
+  }
+  .form-unlist-box .form-list-btn:hover .link-form-btn {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+  }
+  .menu-toggle {
+    font-size: 14px !important;
+  }
+
+  .menubar-list-menu .drop-down-submenu-main-box {
+    position: relative;
+    padding: 0px;
+  }
+  .menubar-unlist-box .menubar-list-menu:hover .dropdown-submenu {
+    display: block;
+    /* position: relative; */
+    background-color: var(--primary-color);
+    /* margin-top: 7px; */
+    z-index: 2;
+    padding: 10px;
+  }
+  /* --- Mega menu --- */
+  .form-unlist-box .form-list-btn .visitor-megamenu-main-body {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .form-unlist-box .form-list-btn:hover .visitor-megamenu-main-body {
+    display: block;
+    bottom: 100%;
+    opacity: 1;
+    width: 100%;
+    padding: 0%;
+  }
+  /* --- End Mega Menu --- */
+  .dropdown-side-submenu {
+    background-color: var(--primary-color);
+    padding: 5px;
+    width: 100% !important;
+    margin-left: 2px;
+  }
+}
+
+/* Medium Devices (769px to 992px) */
+@media (max-width: 992px) {
+  .logo-box {
+    max-width: 65px;
+    padding: 9px;
+  }
+  .header-menubar-box {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--secondary-color);
+    text-align: left;
+    z-index: 2;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+  .menubar-unlist-box .menubar-list-menu .link-menubar {
+    color: var(--primary-color);
+  }
+  .menubar-unlist-box .menubar-list-menu:hover .link-menubar {
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--light-color);
+  }
+  .header-menubar-box.show {
+    display: flex;
+    padding: 5px 0px 38px 0;
+  }
+  .menubar-unlist-box .menubar-list-menu {
+    border-bottom: 1px solid var(--light-color);
+    width: 95%;
+  }
+  .menubar-unlist-box .menubar-list-menu {
+    padding: 8px 0;
+  }
+  .menu-toggle {
+    display: block;
+    color: var(--light-color);
+    background-color: transparent;
+    border: none;
+    font-size: 18px !important;
+  }
+
+  .menubar-list-menu .drop-down-submenu-main-box {
+    position: relative;
+    padding: 0px;
+  }
+  .menubar-unlist-box .menubar-list-menu:hover .dropdown-submenu {
+    display: block;
+    /* position: relative; */
+    background-color: var(--primary-color);
+    /* margin-top: 7px; */
+    z-index: 2;
+    padding: 10px;
+  }
+  /* --- Mega Menu ---  */
+  .form-unlist-box .form-list-btn .visitor-megamenu-main-body {
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  /* --- End Mega Menu ---  */
+  .submenu-drop-down-icon {
+    width: 10px;
+    left: 190px;
+    position: absolute;
+    top: 12px;
+  }
+  .reg-submenu-drop-down-icon {
+    width: 10px;
+    left: 190px;
+    position: absolute;
+    top: 12px;
+  }
+  .submenu-list-menu:hover .dropdown-side-submenu-main-box {
+    display: block;
+    position: relative !important;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    padding: 0px 0px 0px 15px;
+    width: 100%;
+  }
+   .submenu-list-menu:hover .reg-dropdown-side-submenu-main-box {
+    display: block;
+    position: relative !important;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    padding: 0px 0px 0px 15px;
+    width: 100%;
+  }
+}
+
+/* Large Devices (993px to 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .menubar-unlist-box .menubar-list-menu {
+    padding: 0px 4px;
+  }
+  .menubar-unlist-box .menubar-list-menu .link-menubar {
+    font-size: 11px;
+  }
+  .form-unlist-box .form-list-btn {
+    padding: 5px 3px;
+  }
+  .form-unlist-box .form-list-btn .link-form-btn {
+    font-size: 11px;
+  }
+}
+
+/* ----- End Header ------ */
+
+.submenu-drop-down-icon {
+  width: 10px;
+  right: -3px;
+  position: absolute;
+  top: 11px;
+}
+.submenu-list-menu .dropdown-side-submenu-main-box {
+  display: none;
+}
+.dropdown-side-submenu {
+  background-color: var(--primary-color);
+  padding: 5px;
+  width: max-content;
+  margin-left: 2px;
+}
+.submenu-list-menu:hover .dropdown-side-submenu-main-box {
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  right: -176px;
+  top: 0;
+  width: 100%;
+  padding: 5px 5px 5px 15px;
+  z-index: 2;
+}
+/* Registration Form Mega Menu */
+.reg-submenu-drop-down-icon {
+  width: 10px;
+  right: -7px;
+  position: absolute;
+  top: 11px;
+}
+.submenu-list-menu .reg-dropdown-side-submenu-main-box {
+  display: none;
+}
+.reg-dropdown-side-submenu {
+  background-color: var(--primary-color);
+  padding: 5px;
+  width: max-content;
+  margin-left: 2px;
+}
+.submenu-list-menu:hover .reg-dropdown-side-submenu-main-box {
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  right: -148px;
+  top: 0;
+  width: 100%;
+  padding: 5px 5px 5px 15px;
+  z-index: 2;
+}

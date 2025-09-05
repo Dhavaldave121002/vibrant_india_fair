@@ -1,0 +1,237 @@
+/* --- Participation Charges Section --- */
+/* --- Left Part --- */
+.participation-charges-secondary-title{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px 10px 60px;
+    color: var(--dark-color);
+    position: relative;
+}
+.participation-charges-secondary-title::before{
+    content: "";
+    position: absolute;
+    background-image: url('../images/icon/purse.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.participation-charges-btn-box{
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+.participation-charges-btn-box .participation-charges-link-btn-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.participation-charges-link-btn-box .participation-charges-link-btn{
+    border: none;
+    background-color: var(--light-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: var(--dark-color);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+ .participation-charges-active {
+    color: var(--light-color) !important;
+	background-color: var(--primary-color) !important;
+	transform: translateY(-2px);
+    position: relative;
+}
+ .participation-charges-active::before {
+    content: "";    position: absolute;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0px;
+    height: 0px;
+    border-left: 8px solid rgb(0 0 0 / 0%);
+    border-right: 8px solid rgba(0, 0, 0, 0);
+    border-top: 8px solid var(--primary-color);
+    border-bottom: 0px;
+}
+.participation-charges-details-section{
+    display: none;
+	width: 100%;
+	background-color: var(--light-color);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	border-radius: 10px;
+	animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+	from {
+        opacity: 0;
+        transform: translateY(10px);
+	}
+	to {
+        opacity: 1;
+        transform: translateY(0);
+	}
+}
+/* --- End Left Part --- */
+
+/* --- Right Part --- */
+.participation-charges-right-part-section .participation-charges-main-img-body{
+    position: relative;
+}
+ .mobile-screen-img-box{
+    width: 270px;
+    padding: 5px;
+ }
+ /* .mobile-screen-img-box::before{
+    content: "";
+    position: absolute;
+    background-color: var(--dark-color);
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 27%;
+    width: 51px;
+    height: 6px;
+    border-radius: 0px 0px 5px 5px;
+ } */
+ .mobile-screen-img-box .mobile-screen-img{
+    width: 100%;
+    height: 100%;
+ }
+ .participation-charges-top-img-box{
+    max-width: 110px;
+    position: absolute;
+    top: 30px;
+    left: 46px;
+ }
+ .participation-charges-top-img-box .participation-charges-top-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+ }
+ .mobile-screen-img-box .participation-charges-video-box{
+    max-width: 108px;
+    /* aspect-ratio: 2 / 5; */
+    position: absolute;
+    top: 73px;
+    left: 47px;
+}
+.participation-charges-video-box .participation-charges-video{
+    width: 100%;
+    height: 100%;
+    border-radius: 1px 1px 10px 10px;
+}
+/* --- End Right Part --- */
+/* --- End Participation Charges Section --- */
+
+/* --- Display Booth Section ---  */
+.display-booth-back-img-body{
+    background-image: url('../images/Pattern-Bg-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+.display-booth-back-img-body::before{
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #27747457;
+}
+ .display-booth-card-main-box{
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    border: 1px solid #cce9e942;
+    border-radius: 5px;
+    padding: 15px 10px;
+ }
+ .display-booth-card-main-box .display-booth-heading-box{
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: var(--dark-color);
+    border-bottom: 1px solid #cce9e980;
+ }
+ .display-booth-heading-box .display-booth-heading-img-box{
+    max-width: 50px;
+    padding: 2px 0px;
+ }
+ .display-booth-heading-img-box .display-booth-heading-img-box{
+    width: 100%;
+    height: 100%;
+ }
+/* --- End Display Booth Section ---  */
+
+/* --- Payment Details Section --- */
+.payment-details-back-img-body{
+    background-image:  linear-gradient(0deg, #031a3ad6, rgba(5, 22, 46, 0.897) 100%),url('../images/payment-back-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+}
+.payment-gateway-bank-details-body::before{
+    content: "";
+    position: absolute;
+    top: 35%;
+    right: 20%;
+    bottom: 0;
+    background-image: url('../images/icon/credit-card.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 8%;
+    opacity: 0.4;
+}
+ .payment-details-heading{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--light-color);
+ }
+ .payment-details-text-content{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 0px;
+    color: var(--light-color);
+ }
+ .payment-details-text-title{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 0px;
+    letter-spacing: 1px;
+    color: var(--light-color);
+ }
+ .payment-details-text-content-box{
+    padding: 10px 0px;
+ }
+ .payment-details-table{
+    width: 100%;
+ }
+ .payment-gateway-bank-details-body{
+    padding: 10px 0px;
+    border-top: 1px solid var(--light-color);
+ }
+ .payment-details-table-row{
+    border-bottom: 1px solid #ffffff0f;
+ }
+/* --- End Payment Details Section --- */

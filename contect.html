@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibrant India Fair</title>
+  <link rel="icon" type="image/x-icon" href="assets/assets/Images/icon/VIFabicon.png"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    body {font-family: Arial, sans-serif;margin: 0;padding: 0;background: #f7f7f7;}
+    .site-breadcrumb {
+      position: relative;
+      background: url('assets/assets/Images/contact-banner.jpg') center/cover no-repeat;
+      min-height: 320px;display: flex;align-items: center;justify-content: center;
+      border-radius: 0 0 40px 40px;margin-bottom: 24px;box-shadow: 0 2px 26px #1e43d028;overflow: hidden;
+    }
+    .site-breadcrumb::before {
+      content: "";position: absolute;inset: 0;
+      background: linear-gradient(120deg, rgba(37,99,235,0.75), rgba(120,0,255,0.55));
+      z-index: 1;
+    }
+    .site-breadcrumb h2 {
+      position: relative;z-index: 2;font-size: 3rem;font-weight: 800;color: #fff;
+      text-shadow: 0 4px 18px rgba(0,0,0,0.6);
+    }
+    .breadcrumb-subtitle {
+      position: relative;z-index: 2;font-size: 1.2rem;color: #f9f9f9;text-align: center;
+      margin-top: 10px;text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    }
+    /* Back Button */
+    .back-btn {
+      position: absolute;top: 20px;left: 20px;z-index: 3;
+      background: rgba(0,0,0,0.5);color: #fff;padding: 10px 12px;border-radius: 50%;
+      font-size: 1.2rem;cursor: pointer;transition: 0.3s;
+    }
+    .back-btn:hover {background: rgba(0,0,0,0.7);}
+    .contact-wrapper {display: flex;flex-wrap: wrap;gap: 20px;max-width: 1200px;margin: auto;padding: 20px;}
+    .contact-img {flex: 1 1 40%;}
+    .contact-img img {width: 100%;border-radius: 16px;box-shadow: 0 6px 16px rgba(0,0,0,0.15);}
+    .contact-form {flex: 1 1 55%;background: #fff;padding: 20px;border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);}
+    .contact-form input, .contact-form textarea {
+      width: 100%;padding: 12px;margin-bottom: 12px;border-radius: 8px;border: 1px solid #ddd;
+    }
+    .contact-form button {
+      background: #2563eb;color: #fff;border: none;padding: 12px 18px;border-radius: 10px;
+      font-size: 1rem;cursor: pointer;transition: 0.3s;display: flex;align-items: center;gap: 8px;
+    }
+    .contact-form button:hover {background: #1d4ed8;}
+    iframe {width: 100%;border: none;border-radius: 16px;box-shadow: 0 6px 18px rgba(0,0,0,0.1);}
+    .team-section {background: #fff;padding: 40px 20px;margin-top: 30px;text-align: center;}
+    .team-section h3 {font-size: 2rem;margin-bottom: 20px;}
+    .team-grid {display: flex;flex-wrap: wrap;gap: 20px;justify-content: center;}
+    .team-card {background: #fafafa;padding: 20px;border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);max-width: 260px;flex: 1;text-align: center;}
+    .team-card img {width: 100px;height: 100px;border-radius: 50%;margin-bottom: 12px;}
+    .team-social a {margin: 0 6px;color: #2563eb;font-size: 1.2rem;}
+    @media (max-width: 768px) {
+      .site-breadcrumb h2 {font-size: 2rem;}
+      .contact-wrapper {flex-direction: column;}
+      .contact-img, .contact-form {flex: 1 1 100%;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- Banner -->
+<section class="site-breadcrumb">
+  <!-- Back Button -->
+  <div class="back-btn" onclick="window.history.back()">
+    <i class="fa-solid fa-arrow-left"></i>
+  </div>
+  <div class="text-center">
+    <h2 class="animate__animated animate__fadeInDown">Contact Us</h2>
+    <p class="breadcrumb-subtitle animate__animated animate__fadeInUp">We’re here to connect with you</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<div class="contact-wrapper">
+  <div class="contact-img">
+    <img src="assets/assets/Images/Vibrant-India-Mumbai.png" alt="Contact">
+  </div>
+  <div class="contact-form">
+    <h3>Get in Touch</h3>
+    <form id="contactForm">
+      <input type="text" name="fullname" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="website" placeholder="Website (Optional)">
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit"><i id="btn-icon" class="fas fa-paper-plane"></i> <span id="btn-text">Send</span></button>
+    </form>
+  </div>
+</div>
+
+<!-- Map -->
+<div style="max-width: 1200px; margin: 30px auto; padding: 0 20px;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.4413097639604!2d72.66530697400144!3d23.04427701552035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e874f95e8e70f%3A0x95fe59a98a03ecc!2sVibrant%20India%20Tech!5e0!3m2!1sen!2sin!4v1756972943430!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<!-- Team -->
+<section class="team-section">
+  <h3>Our Support Team</h3>
+  <div class="team-grid">
+    <div class="team-card animate__animated animate__zoomIn">
+      <img src="assets/assets/Images/scaledd.png" alt="Narendra Diwakar">
+      <h4>Narendra Diwakar</h4>
+      <p>Exhibitor Support<br><b>Email:</b> info@vibrantindiafair.com<br><b>Phone:</b> +91-9924488938</p>
+      <div class="team-social">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@vibrantindiafair.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/919924488938" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(event){
+  event.preventDefault();
+  const form = event.target;
+  const fullname = form.fullname.value;
+  const email = form.email.value;
+  const phone = form.phone.value;
+  const website = form.website.value || "N/A";
+  const message = form.message.value;
+
+  const textMsg = `Hello, I want to connect.\n\nName: ${fullname}\nEmail: ${email}\nPhone: ${phone}\nWebsite: ${website}\n\nMessage: ${message}`;
+
+  // Detect Mobile or Desktop
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if(isMobile){
+    // WhatsApp
+    const whatsappUrl = `https://wa.me/919924488938?text=${encodeURIComponent(textMsg)}`;
+    window.open(whatsappUrl, '_blank');
+  } else {
+    // Gmail
+    const subject = encodeURIComponent("Contact Form Submission from " + fullname);
+    const body = encodeURIComponent(textMsg);
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=info@vibrantindiafair.com&su=${subject}&body=${body}`;
+    window.open(gmailUrl, '_blank');
+  }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+/* ----- Common Css ----- */
+:root {
+  --primary-color: #277474;
+  --secondary-color: #cce9e9;
+  --dark-color: #000;
+  --light-color: #fff;
+}
+@font-face {
+  font-family: myFont;
+  src: url("../Fonts/Poppins-Light.ttf");
+}
+body {
+  font-family: myFont !important;
+  overflow-x: hidden;
+}
+/* --- Banner Section --- */
+.showcase-banner-main-box .showcase-banner-thumbnail {
+  width: 100%;
+  padding-bottom: 30%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.showcase-banner-thumbnail .showcase-banner-img-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.showcase-banner-img-box .showcase-banner-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+.showcase-banner-main-box .showcase-banner-thumbnail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #00000090;
+  z-index: 1;
+}
+/* --- Banner Heading Section --- */
+.banner-header-title {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-size: 3vw;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--light-color);
+  z-index: 1;
+}
+.banner-header-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  height: 3px;
+  background-color: var(--secondary-color);
+}
+.banner-header-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 30%;
+  height: 3px;
+  background-color: var(--secondary-color);
+}
+/* --- End Banner Heading Section --- */
+/* --- End Banner Section --- */
+
+.section-margin {
+  margin: 40px 0px 0px 0px;
+}
+.primary-heading {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: myFont;
+  text-align: center;
+  padding: 10px;
+}
+.primary-title {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: myFont;
+  color: var(--dark-color);
+  position: relative;
+  padding: 0 0 0 40px;
+}
+.primary-title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 35px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+.secondary-title {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: myFont;
+  color: var(--primary-color);
+}
+.section-text-title {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 0px 0px 0px;
+  color: var(--dark-color);
+}
+.section-text-content {
+  font-size: 12px;
+  padding: 5px 0px 0px 0px;
+  color: var(--dark-color);
+}
+
+/* Primary Button  */
+.primary-btn {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--dark-color);
+  text-decoration: none !important;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  overflow: hidden;
+  border-radius: 25px;
+  transition: color 0.3s ease-in-out;
+}
+.primary-btn:hover {
+  color: var(--light-color);
+}
+.primary-btn .primary-btn-i {
+  margin-left: 0.5em;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.primary-btn .primary-btn-color {
+  width: 33px;
+  height: 33px;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 1;
+  transition: all 0.4s ease-in-out;
+}
+.primary-btn .primary-btn-span,
+.primary-btn .primary-btn-i {
+  position: relative;
+  z-index: 1;
+  font-size: 12px;
+}
+.primary-btn:hover .primary-btn-i {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.4s;
+}
+.primary-btn:hover .primary-btn-color {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  left: 0;
+}
+/* End Primary Button */
+
+/* ----- End Common CSS ----- */
+/* Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+  .showcase-banner-main-box .showcase-banner-thumbnail {
+    width: 100%;
+    padding-bottom: 35%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  .banner-header-title::before,
+  .banner-header-title::after {
+    display: none;
+  }
+  .section-margin {
+    margin: 20px 0px 0px 0px;
+  }
+  .primary-heading {
+    font-size: 20px;
+  }
+  .primary-title {
+    font-size: 17px;
+    padding: 0 0 0 30px;
+  }
+  .primary-title::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    width: 25px;
+    height: 2px;
+    background-color: var(--primary-color);
+  }
+  .secondary-title {
+    font-size: 17px;
+  }
+}

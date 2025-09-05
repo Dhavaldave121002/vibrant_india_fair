@@ -1,0 +1,294 @@
+.footer-back-color{
+    background-color: var(--primary-color);
+    padding: 10px 0;
+}
+
+/* --- Left Part --- */
+.footer-left-part-box .footer-left-heading{
+    font-size: 20px;
+    color: var(--light-color);
+}
+.footer-left-part-box .footer-heading-content{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--light-color);
+}
+/* --- End Left Part --- */
+
+/* --- Center Part --- */
+.footer-center-part .footer-form-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.footer-center-part .footer-input-box{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+}
+.footer-form-box .footer-form-subscribe-box{
+    position: absolute;
+    right: 0;
+    padding: 0px 4px;
+}
+.footer-form-subscribe-box .footer-form-subscribe-btn{
+    border: none;
+    border-radius: 4px;
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    padding: 5px 15px;
+}
+/* --- End Center Part --- */
+
+/* --- Right Part --- */
+.footer-contact-btn .footer-contact-btn-link{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--light-color);
+    position: relative;
+}
+
+.footer-contact-btn .footer-contact-btn-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    width: 0%;
+    height: 1px;
+    background-color: var(--light-color);
+    transition: width 0.4s ease-in-out;
+}
+
+.footer-contact-btn .footer-contact-btn-link:hover::after {
+    width: 100%;
+}
+.footer-contact-btn-link .footer-contact-btn-arrow{
+    right: 0;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    color: var(--light-color);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center;
+    background-image: url(../images/icon/arrow.png);
+    transform: rotate(320deg);
+}
+/* --- End Right Part --- */
+
+/* --- Footer Image Section --- */
+.footer-back-img{
+    background-image: url('../images/footer-business.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.footer-back-img::before{
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: #277474e3;
+}
+.footer-col-box{
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    border: 1px solid #cce9e942;
+    border-radius: 5px;
+    padding: 15px 5px;
+}
+.footer-col-box .footer-heading-holder{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--light-color);
+    text-align: center;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--secondary-color);
+}   
+.footer-col-box .footer-unlist{
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+}
+.footer-unlist .footer-list{
+    list-style: none;
+    padding: 6px 0px 0px 0px;
+}
+.footer-list .footer-list-link{
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--light-color);
+    transition: 0.7s ease-in-out;
+}
+.footer-list .footer-list-link:hover{
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+}
+
+/* --- End Footer Image Section --- */
+
+/* --- Footer Copy Right Section --- */
+.footer-copyright-box{
+    padding: 10px 0px;
+    border-top: 1px solid var(--light-color);
+    position: relative;
+
+}
+.copyright-logo-box .copyright-logo-img-link{
+    text-decoration: none;
+}
+.copyright-left-part .copyright-logo-box{
+    max-width: 60px;
+}
+.copyright-logo-box .copyright-logo-img{
+    width: 100%;
+    height: 100%;
+}
+
+.copyright-center-part .copyright-text-content{
+    font-size: 12px;
+    color: var(--light-color);
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+.copyright-right-part{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.copyright-social-box{
+    max-width: 40px;
+    padding: 0px 10px;
+}
+
+.copyright-social-box .copyright-social-icon-link{
+    text-decoration: none;
+}
+.copyright-social-box .copyright-social-icon{
+    width: 100%;
+    height: 100%;
+}
+
+.copyright-social-box .copyright-social-icon:hover {
+    filter: invert(100%);
+}
+/* --- Footer Copy Right Section --- */
+
+/* --- WhatsApp Icon Section --- */
+.footer-whatsapp-body{
+    position: fixed;
+    bottom: 3%;
+    right: 1%;
+    z-index: 1;
+    transition-duration: 0.5s;
+    animation: pulse-btn 3s infinite;
+    border-radius: 10px;
+}
+@keyframes pulse-btn {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 200, 0, 1);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(0, 200, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 200, 0, 0);
+  }
+}
+
+.footer-whatsapp-body .footer-whatsapp-box{
+    max-width: 40px;
+}
+.footer-whatsapp-box .footer-whatsapp-icon-link{
+    text-decoration: none;
+}
+.footer-whatsapp-box .footer-whatsapp-img{
+    width: 100%;
+    height: 100%;
+}
+/* --- End WhatsApp Icon Section --- */
+/* --- Footer BAck to Top Buttn Section --- */
+.top-btn-box{
+    position: fixed;
+    bottom: 18%;
+    right: 1%;
+    z-index: 1;
+}
+.top-btn-box .top-btn{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(100px);
+    max-width: 40px;
+    border: 2px solid var(--secondary-color);
+}
+.top-btn.show {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+.top-btn .top-btn-img{
+    width: 100%;
+    height: 100%;
+}
+
+/* --- End Footer Back to Top Buttn Section --- */
+/* Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+.footer-col-box .footer-unlist{
+    text-align: center;
+}
+.footer-copyright-box{
+    padding: 10px 0px 35px 0px;
+}
+}
+/* Medium Devices (769px to 992px) */
+@media (max-width: 992px) {
+.copyright-left-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.copyright-center-part{
+    text-align: center;
+}
+.copyright-right-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-whatsapp-body{
+    position: fixed;
+    bottom: 11%;
+    right: 1%;
+    z-index: 1;
+    transition-duration: 0.5s;
+    animation: pulse-btn 3s infinite;
+    border-radius: 10px;
+}
+.top-btn-box{
+    position: fixed;
+    bottom: 22%;
+    right: 1%;
+    z-index: 1;
+}
+}
+/* --- End Footer CopyRight Section --- */

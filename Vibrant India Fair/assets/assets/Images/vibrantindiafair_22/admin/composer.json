@@ -1,0 +1,15 @@
+{
+    "name": "dhruv/admin",
+    "autoload": {
+        "psr-4": {
+            "Dhruv\\Admin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dhruv Patel",
+            "email": "dhruv.patel02012003@gmail.com"
+        }
+    ],
+    "require": {}
+}

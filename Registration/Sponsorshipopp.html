@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sponsorship Opportunities</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{
+      background:#f3f4f6;min-height:100vh;
+      display:flex;align-items:center;justify-content:center;padding:20px
+    }
+
+    .container{
+      width:100%;max-width:550px;background:#fff;border-radius:16px;padding:30px;
+      box-shadow:0 15px 35px rgba(0,0,0,0.1);transition:.3s
+    }
+    .header{text-align:center;margin-bottom:25px}
+    .header h2{color:#1f2937;font-size:26px;font-weight:700}
+    .header p{color:#6b7280;font-size:14px}
+
+    /* Stepper */
+    .steps{display:flex;justify-content:space-between;margin-bottom:25px}
+    .step{flex:1;text-align:center;position:relative}
+    .step::before{
+      content:"";position:absolute;top:15px;left:50%;transform:translateX(-50%);
+      height:8px;width:100%;background:#e5e7eb;z-index:-1
+    }
+    .step:first-child::before{display:none}
+    .circle{
+      height:30px;width:30px;line-height:30px;border-radius:50%;
+      background:#e5e7eb;color:#374151;display:inline-block;font-size:14px;font-weight:600
+    }
+    .active .circle{background:#2563eb;color:#fff}
+    .done .circle{background:#10b981;color:#fff}
+
+    .section-title{font-weight:600;font-size:16px;color:#374151;margin:20px 0 10px}
+
+    .form-group{position:relative;margin-bottom:22px}
+    .form-icon{position:absolute;top:50%;left:15px;transform:translateY(-50%);color:#2563eb;font-size:18px}
+    .form-input,.form-select{
+      width:100%;background:#f9fafb;border-radius:10px;padding:16px 18px 10px 50px;
+      border:1.8px solid #e5e7eb;font-size:15px;transition:.3s
+    }
+    .form-input:focus,.form-select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 8px rgba(37,99,235,.25)}
+    .form-label{
+      position:absolute;left:50px;top:50%;transform:translateY(-50%);color:#9ca3af;
+      font-size:15px;transition:.3s;pointer-events:none
+    }
+    .form-input:focus ~ .form-label,
+    .form-input:not(:placeholder-shown) ~ .form-label,
+    .form-select:focus ~ .form-label,
+    .form-select:not([value=""]) ~ .form-label{
+      top:8px;font-size:12px;color:#2563eb;background:#fff;padding:0 6px
+    }
+    textarea.form-input{min-height:90px;padding-top:18px;resize:vertical}
+
+    /* Buttons */
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      padding:12px 20px;border:none;border-radius:10px;font-size:15px;font-weight:600;
+      cursor:pointer;transition:.3s
+    }
+    .btn-primary{background:#2563eb;color:#fff}
+    .btn-primary:hover{background:#1d4ed8}
+    .btn-secondary{background:#f3f4f6;color:#374151}
+    .btn-secondary:hover{background:#e5e7eb}
+
+    .btn-group{display:flex;justify-content:space-between;margin-top:10px}
+
+    .notification{
+      position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(40px);
+      padding:14px 20px;border-radius:12px;color:#fff;font-weight:500;
+      opacity:0;transition:.4s;z-index:999
+    }
+    .notification.show{opacity:1;transform:translateX(-50%) translateY(0)}
+    .notification.success{background:linear-gradient(90deg,#10b981,#34d399)}
+    .notification.error{background:linear-gradient(90deg,#ef4444,#f87171)}
+
+    @media(max-width:480px){
+      .header h2{font-size:22px}
+      .form-input,.form-select{padding:14px 16px 8px 45px;font-size:14px}
+      .btn{font-size:14px;padding:10px 16px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Sponsorship Opportunities</h2>
+      <p>Please fill in your details step by step</p>
+    </div>
+
+    <!-- Stepper -->
+    <div class="steps">
+      <div class="step active" id="step1">
+        <div class="circle">1</div>
+        <p>Personal</p>
+      </div>
+      <div class="step" id="step2">
+        <div class="circle">2</div>
+        <p>Company</p>
+      </div>
+    </div>
+
+    <form id="sponsorship-form">
+      <!-- Step 1 -->
+      <div class="form-step" data-step="1">
+        <div class="form-group">
+          <input type="text" name="fullname" class="form-input" placeholder=" " required/>
+          <i class="form-icon fas fa-user"></i>
+          <label class="form-label">Full Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" class="form-input" placeholder=" " required/>
+          <i class="form-icon fas fa-envelope"></i>
+          <label class="form-label">Email Address</label>
+        </div>
+        <div class="form-group">
+          <input type="tel" name="phone" class="form-input" placeholder=" " required/>
+          <i class="form-icon fas fa-phone"></i>
+          <label class="form-label">Phone Number</label>
+        </div>
+        <div class="form-group">
+          <input type="text" name="designation" class="form-input" placeholder=" " required/>
+          <i class="form-icon fas fa-id-badge"></i>
+          <label class="form-label">Designation / Job Title</label>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary" id="nextBtn">Next</button>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="form-step" data-step="2" style="display:none">
+        <div class="form-group">
+          <input type="text" name="company" class="form-input" placeholder=" " required/>
+          <i class="form-icon fas fa-building"></i>
+          <label class="form-label">Company Name</label>
+        </div>
+        <div class="form-group">
+          <select name="sponsorship" class="form-select" required>
+            <option value="" selected disabled hidden></option>
+            <option value="Gold Sponsorship">Gold Sponsorship</option>
+            <option value="Silver Sponsorship">Silver Sponsorship</option>
+            <option value="Bronze Sponsorship">Bronze Sponsorship</option>
+            <option value="Other">Other</option>
+          </select>
+          <i class="form-icon fas fa-star"></i>
+          <label class="form-label">Sponsorship Type</label>
+        </div>
+        <div class="form-group">
+          <input type="number" name="budget" class="form-input" placeholder=" " required/>
+          <i class="form-icon fas fa-indian-rupee-sign"></i>
+          <label class="form-label">Budget / Contribution (₹)</label>
+        </div>
+        <div class="form-group">
+          <textarea name="message" class="form-input" placeholder=" "></textarea>
+          <i class="form-icon fas fa-comment"></i>
+          <label class="form-label">Message / Proposal</label>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary" id="prevBtn">Back</button>
+          <button type="submit" class="btn btn-primary">
+            <i id="btn-icon" class="fas fa-envelope"></i>
+            <span id="btn-text">Submit via Gmail</span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="notification" id="notification"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded",()=>{
+      const steps=document.querySelectorAll(".step");
+      const formSteps=document.querySelectorAll(".form-step");
+      const nextBtn=document.getElementById("nextBtn");
+      const prevBtn=document.getElementById("prevBtn");
+      const form=document.getElementById("sponsorship-form");
+      const btnText=document.getElementById("btn-text");
+      const btnIcon=document.getElementById("btn-icon");
+      const notification=document.getElementById("notification");
+
+      let currentStep=0;
+
+      function updateStep(){
+        formSteps.forEach((fs,i)=>fs.style.display=i===currentStep?"block":"none");
+        steps.forEach((s,i)=>{
+          s.classList.remove("active","done");
+          if(i<currentStep){s.classList.add("done")}
+          if(i===currentStep){s.classList.add("active")}
+        });
+      }
+
+      nextBtn.addEventListener("click",()=>{
+        currentStep=1;updateStep();
+      });
+      prevBtn.addEventListener("click",()=>{
+        currentStep=0;updateStep();
+      });
+
+      const isMobile=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if(isMobile){
+        btnIcon.className="fab fa-whatsapp";
+        btnText.textContent="Submit via WhatsApp";
+      }else{
+        btnIcon.className="fas fa-envelope";
+        btnText.textContent="Submit via Gmail";
+      }
+
+      form.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        const data=Object.fromEntries(new FormData(form).entries());
+
+        if(!data.fullname||!data.email||!data.phone||!data.designation||!data.company||!data.sponsorship||!data.budget){
+          showNotification("⚠️ Please fill all required fields","error");
+          return;
+        }
+
+        const msg=`Hello Team,%0D%0A%0D%0A`+
+          `I am interested in sponsoring your event. Here are my details:%0D%0A%0D%0A`+
+          `👤 Personal Info:%0D%0A`+
+          `Full Name: ${data.fullname}%0D%0A`+
+          `Email: ${data.email}%0D%0A`+
+          `Phone: ${data.phone}%0D%0A`+
+          `Designation: ${data.designation}%0D%0A%0D%0A`+
+          `🏢 Company Info:%0D%0A`+
+          `Company: ${data.company}%0D%0A`+
+          `Sponsorship Type: ${data.sponsorship}%0D%0A`+
+          `Budget: ₹${data.budget}%0D%0A`+
+          `Message: ${data.message||"Not specified"}%0D%0A%0D%0A`+
+          `Looking forward to your response.`;
+
+        if(isMobile){
+          const whatsappNumber="918511172099";
+          const url=`https://wa.me/${whatsappNumber}?text=${msg}`;
+          window.open(url,"_blank");
+          showNotification("✅ WhatsApp opened","success");
+        }else{
+          const email="dhavaldave121002@gmail.com";
+          const subject="Sponsorship Opportunity Inquiry";
+          const gmailUrl=`https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${msg}`;
+          window.open(gmailUrl,"_blank");
+          showNotification("📧 Gmail compose opened","success");
+        }
+        form.reset();currentStep=0;updateStep();
+      });
+
+      function showNotification(msg,type){
+        notification.textContent=msg;
+        notification.className=`notification show ${type}`;
+        setTimeout(()=>{notification.className="notification";},3500);
+      }
+    });
+  </script>
+</body>
+</html>

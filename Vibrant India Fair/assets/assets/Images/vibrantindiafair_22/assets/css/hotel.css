@@ -1,0 +1,32 @@
+.hotel-main {
+  height: 100vh;
+}
+.side-tab {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.side-tab .nav-link {
+  color: var(--drak-color);
+  border-radius: 0;
+  text-align: left;
+  background-color: var(--primary-color);
+}
+
+.side-tab .nav-link:hover {
+  color: var(--drak-color) !important ;
+  cursor: pointer;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--drak-color) !important;
+  background-color: var(--primary-color) !important;
+}
+.tab-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+/* .tab-back {
+  background-color: var(--secondary-color) !important;
+} */

@@ -1,0 +1,163 @@
+ /* --- Sponsorship Price Section --- */
+    .sponsorship-offers-main-box{
+        padding: 10px 0px;
+        /* background-color: var(--secondary-color); */
+    }
+    .sponsorship-left-part-offer-box{
+        padding: 10px 15px;
+    }
+    .sponsorship-left-part-offer-box .left-part-heding-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-top: 1px solid var(--dark-color);
+    }
+    /* --- Main Sponsorship Heading --- */
+    .left-part-heding-box .sponsorship-main-primary-title{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #BF0202;
+    }
+    /* --- Co Sponsorship Heading --- */
+     .left-part-heding-box .sponsorship-co-primary-title{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #999999;
+    }
+    /* --- Gold Sponsorship Heading --- */
+     .left-part-heding-box .sponsorship-gold-primary-title{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #CF9A4A;
+    }
+    /* --- Silver Sponsorship Heading --- */
+     .left-part-heding-box .sponsorship-silver-primary-title{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #B0B0B0;
+    }
+    /* --- Registration Sponsorship Heading --- */
+     .left-part-heding-box .sponsorship-registration-primary-title{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        /* color: #365d75; */
+        color: var(--primary-color);
+    }
+    .sponsorship-secondary-btn-box{
+        position: relative;
+        display: inline-block;
+    }
+    .sponsorship-secondary-btn-box .sponsorship-secondary-btn{
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 5px 35px;
+        border: 2px solid var(--primary-color);
+        color: var(--dark-color);
+        border-radius: 20px;
+		display: inline-block;
+        cursor: pointer;
+    }
+    .sponsorship-drop-down-menu-box{
+        position: absolute;
+        display: none;
+    }
+    .sponsorship-drop-down-menu-link{
+        text-decoration: none !important;
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--dark-color);
+    }
+    .sponsorship-drop-down-menu-link:hover{
+        color: var(--primary-color);
+    }
+    .sponsorship-secondary-btn-box:hover .sponsorship-drop-down-menu-box{
+        display: block;
+        padding: 5px;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    /* --- FAQ Details Section ---  */
+        .sponsorship-faq-main-box{
+            padding: 10px;
+        }
+        .sponsorship-faq-main-box .sponsorship-faq-item {
+            padding: 10px;      
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 5px;
+		}
+		.sponsorship-faq-item .sponsorship-faq-question {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			cursor: pointer;
+			font-weight: 600;
+			font-size: 14px;
+			transition: color 0.3s ease;
+            color: var(--primary-color);
+            padding: 10px;
+		}
+		.sponsorship-faq-question .sponsorship-icon {
+			transition: transform 0.3s ease;
+			font-size: 16px;
+		}
+		.sponsorship-faq-item.sponsorship-active .sponsorship-icon {
+			transform: rotate(45deg);
+		}
+		.sponsorship-faq-item .sponsorship-faq-answer {
+			max-height: 0;
+			overflow: hidden;
+			opacity: 0;
+			transform: translateY(-10px);
+			transition: all 0.5s ease;
+			color: var(--dark-color);
+			font-size: 12px;
+            border-top: 1px solid;
+            position: relative;
+            border-image: linear-gradient(to right, transparent, var(--primary-color), transparent) 1;
+		}
+        .sponsorship-faq-item.sponsorship-active .sponsorship-faq-answer {
+			max-height: 600px;
+			opacity: 1;
+			transform: translateY(0);
+		}
+        .sponsorship-faq-answer .sponsorship-faq-answer-img-box{
+            max-width: 150px;
+            position: absolute;
+            top: 15%;
+            right: 5%;
+            opacity: 0.4;
+            z-index: -1;
+        }
+        .sponsorship-faq-answer-img-box .sponsorship-faq-answer-img{
+            width: 100%;
+            height: 100%;
+        }
+        .sponsorship-faq-answer .sponsorship-faq-answer-content{
+            padding: 10px 25px;
+        }
+    /* --- End FAQ Details Section --- */
+ /* --- End Sponsorship Price Section --- */
+ 
+ 
+/* Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+    .sponsorship-secondary-btn-box:hover .sponsorship-drop-down-menu-box{
+        display: block;
+        position: absolute;
+        right: -118px;
+        top: -40%;
+        padding: 5px;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+}

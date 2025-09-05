@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vendor Registration</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{
+      background:linear-gradient(135deg,#6366f1,#8b5cf6,#ec4899);
+      background-size:300% 300%;animation:gradientMove 10s ease infinite;
+      min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px
+    }
+    @keyframes gradientMove{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
+
+    .container{
+      width:100%;max-width:460px;background:rgba(255,255,255,0.9);
+      backdrop-filter:blur(10px);border-radius:20px;padding:30px;
+      box-shadow:0 20px 40px rgba(0,0,0,0.25);transition:.3s
+    }
+    .container:hover{transform:translateY(-5px)}
+    .header{text-align:center;margin-bottom:25px}
+    .header h2{color:#4f46e5;font-size:28px;font-weight:700}
+    .header p{color:#6b7280;font-size:14px}
+
+    .form-group{position:relative;margin-bottom:25px}
+    .form-icon{position:absolute;top:50%;left:15px;transform:translateY(-50%);color:#6366f1;font-size:18px}
+    .form-input{
+      width:100%;background:#f9fafb;border-radius:12px;padding:18px 20px 10px 50px;
+      border:2px solid #e5e7eb;font-size:15px;transition:.3s
+    }
+    .form-input:focus{outline:none;border-color:#6366f1;box-shadow:0 0 15px rgba(99,102,241,.3)}
+    .form-label{
+      position:absolute;left:50px;top:50%;transform:translateY(-50%);color:#9ca3af;
+      font-size:15px;transition:.3s;pointer-events:none
+    }
+    .form-input:focus ~ .form-label,
+    .form-input:not(:placeholder-shown) ~ .form-label{
+      top:10px;font-size:12px;color:#4f46e5;background:#fff;padding:0 6px;font-weight:500
+    }
+    textarea.form-input{min-height:100px;padding-top:20px;resize:vertical}
+
+    .submit-btn{
+      width:100%;background:linear-gradient(90deg,#6366f1,#8b5cf6,#ec4899);
+      background-size:200% 200%;animation:gradientMove 6s ease infinite;
+      color:#fff;padding:14px;border:none;border-radius:12px;font-weight:600;font-size:16px;
+      cursor:pointer;box-shadow:0 5px 20px rgba(99,102,241,.4);
+      display:flex;align-items:center;justify-content:center;gap:10px
+    }
+    .submit-btn:active{transform:scale(.97)}
+
+    .notification{
+      position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(40px);
+      padding:14px 20px;border-radius:12px;color:#fff;font-weight:500;
+      opacity:0;transition:.4s;z-index:999;display:flex;align-items:center;gap:8px
+    }
+    .notification.show{opacity:1;transform:translateX(-50%) translateY(0)}
+    .notification.success{background:linear-gradient(90deg,#10b981,#34d399)}
+    .notification.error{background:linear-gradient(90deg,#ef4444,#f87171)}
+
+    @media(max-width:480px){
+      .header h2{font-size:22px}
+      .form-input{padding:14px 18px 8px 45px;font-size:14px}
+      .submit-btn{font-size:15px;padding:12px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Vendor Registration</h2>
+      <p>Please fill in the details below</p>
+    </div>
+    <form id="registration-form">
+      <div class="form-group">
+        <input type="text" name="full_name" class="form-input" placeholder=" " required/>
+        <i class="form-icon fas fa-user"></i>
+        <label class="form-label">Full Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" class="form-input" placeholder=" " required/>
+        <i class="form-icon fas fa-envelope"></i>
+        <label class="form-label">Email Address</label>
+      </div>
+      <div class="form-group">
+        <input type="tel" name="phone" class="form-input" placeholder=" " required/>
+        <i class="form-icon fas fa-phone"></i>
+        <label class="form-label">Phone Number</label>
+      </div>
+      <div class="form-group">
+        <input type="text" name="city" class="form-input" placeholder=" " required/>
+        <i class="form-icon fas fa-city"></i>
+        <label class="form-label">City</label>
+      </div>
+      <div class="form-group">
+        <textarea name="interests" class="form-input" placeholder=" "></textarea>
+        <i class="form-icon fas fa-star"></i>
+        <label class="form-label">What are you interested in?</label>
+      </div>
+      <button type="submit" class="submit-btn" id="submit-btn">
+        <i class="fab fa-whatsapp" id="btn-icon"></i>
+        <span id="btn-text">Register via WhatsApp</span>
+      </button>
+    </form>
+  </div>
+
+  <div class="notification" id="notification"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      const form=document.getElementById("registration-form");
+      const btnText=document.getElementById("btn-text");
+      const btnIcon=document.getElementById("btn-icon");
+      const notification=document.getElementById("notification");
+
+      const isMobile=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+      if(isMobile){
+        btnIcon.className="fab fa-whatsapp";
+        btnText.textContent="Register via WhatsApp";
+      }else{
+        btnIcon.className="fas fa-envelope";
+        btnText.textContent="Register via Gmail";
+      }
+
+      form.addEventListener("submit",function(e){
+        e.preventDefault();
+        const data=Object.fromEntries(new FormData(form).entries());
+
+        if(!data.full_name||!data.email||!data.phone||!data.city){
+          showNotification("⚠️ Please fill all required fields","error");
+          return;
+        }
+
+        const msg=`Hello Team,%0D%0A%0D%0A`+
+          `I would like to register as a Vendor. Please find my details below:%0D%0A%0D%0A`+
+          `Name: ${data.full_name}%0D%0A`+
+          `Email: ${data.email}%0D%0A`+
+          `Phone: ${data.phone}%0D%0A`+
+          `City: ${data.city}%0D%0A`+
+          `Interests: ${data.interests||"Not specified"}%0D%0A%0D%0A`+
+          `Thank you!`;
+
+        if(isMobile){
+          const whatsappNumber="918511172099";
+          const url=`https://wa.me/${whatsappNumber}?text=${msg}`;
+          window.open(url,"_blank");
+          showNotification("✅ WhatsApp opened","success");
+        }else{
+          const email="dhavaldave121002@gmail.com";
+          const subject="New Vendor Registration";
+          const gmailUrl=`https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${msg}`;
+          window.open(gmailUrl,"_blank");
+          showNotification("📧 Gmail compose opened","success");
+        }
+        form.reset();
+      });
+
+      function showNotification(msg,type){
+        notification.textContent="";
+        notification.innerHTML=(type==="success"?"✅ ":"⚠️ ")+msg;
+        notification.className=`notification show ${type}`;
+        setTimeout(()=>{notification.className="notification";},3500);
+      }
+    });
+  </script>
+</body>
+</html>

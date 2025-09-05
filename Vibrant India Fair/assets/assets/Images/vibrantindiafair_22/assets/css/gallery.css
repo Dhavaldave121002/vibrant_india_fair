@@ -1,0 +1,337 @@
+/* heding responsive start   */
+/* @media (min-width: 480px) and (max-width: 663px) { */
+/* Your styles here */
+/* .gallery-tab-content .primary-heading {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 346px) {
+  .gallery-tab-content .primary-heading {
+    font-size: 25px;
+  }
+} */
+/* heding responsive end  */
+s
+/* off canvas  tab css start */
+.section_tab {
+  display: none;
+}
+.section_tab.active {
+  display: block;
+}
+
+/* off canvas tab css end */
+
+/* gallery show  btn css start */
+.gallery-show-btn {
+  position: relative;
+  top: 50px;
+  left: 5px;
+  padding: 8px 12px; /* Adjusted padding for responsiveness */
+  width: 100%; /* Adjust width to be flexible */
+  max-width: 170px; /* Prevents it from becoming too wide */
+  height: auto; /* Allows flexibility */
+  min-height: 40px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center; /* Centers text */
+  display: flex; /* Align text and icon properly */
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Adds space between text and icon */
+  box-shadow: rgba(0, 0, 0, 0.745) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+/* Icon animation */
+.gallery-show-btn .gallery-show-icon {
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  display: inline-block; /* Ensures alignment with text */
+  animation: clickEffect 0.7s ease-in-out infinite;
+}
+
+/* Click animation to gallery show btn */
+@keyframes clickEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2) rotate(10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* Responsive Design to gallery show btn start*/
+@media (max-width: 768px) {
+  .gallery-show-btn {
+    width: 160px;
+    font-size: 15px;
+    padding: 5px;
+    gap: 10px;
+    font-weight: 500;
+  }
+
+  .gallery-show-btn::after {
+    width: 20px; /* Reduce icon size for small screens */
+    height: 20px;
+  }
+}
+/* Responsive Design to gallery show btn end*/
+/* gallery show  btn css end */
+
+/* drop down btn  start css */
+.gallery-dropdown {
+  width: 100%;
+  margin-top: 3px;
+}
+.gallery-dropdown .gallery-dropdown-show-btn {
+  width: 100%;
+  padding: 7px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  opacity: 8;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.gallery-dropdown .gallery-dropdown-list {
+  position: absolute;
+  inset: 0px auto auto 0px;
+  margin: 0px;
+  transform: translate3d(10px, 61px, 0px);
+  width: 100%;
+  padding: 5px 5px !important;
+}
+.gallery-dropdown .gallery-dropdown-btn {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 663px) {
+  .controls {
+    display: none !important;
+  }
+  .gallery-show-btn {
+    position: fixed;
+    rotate: 270deg;
+    z-index: 1;
+    left: -36px;
+    top: 55%;
+    width: 120px;
+    padding: 0px 7px;
+  }
+  .gallery-show-btn .gallery-show-icon {
+    display: none;
+  }
+}
+@media (min-width: 663px) {
+  .gallery-dropdown {
+    display: none !important;
+  }
+}
+/* drop down btn  end  css */
+/*  off canva open section btn css end  */
+.gallery-canva-btn {
+  background-color: var(--primary-color);
+  width: 100%;
+  border: none;
+  padding: 8px 0px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  color: var(--light-color);
+  transition: 0.5s ease-in-out;
+  margin-top: 10px;
+}
+
+.gallery-canva-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  outline: 2px solid var(--dark-color);
+}
+/* off canva open section btn css end */
+
+/* gallery tab btn css start*/
+.gallery-menu {
+  text-align: center; /* Center the buttons */
+  padding: 5px;
+}
+
+.gallery-menu .controls {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: center; /* Center buttons */
+  gap: 10px; /* Add space between buttons */
+}
+
+.gallery-menu .gallery-tab-control {
+  background: var(--primary-color);
+  color: var(--light-color);
+  padding: 5px 10px;
+  /* border: 1px solid var(--primary-color); */
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.gallery-menu .gallery-tab-control:hover {
+  background: var(--secondary-color);
+  color: var(--dark-color);
+}
+
+.mixitup-control-active {
+  color: var(--dark-color) !important;
+  background: var(--secondary-color) !important;
+}
+
+.fancybox-container button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+/* Responsive Design */
+@media (max-width: 400px) {
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery-tab-control {
+    width: 42%;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+/* gallery tab btn css end*/
+
+/* gallery img in hover effect  start */
+.gallery-item {
+  padding: 10px;
+}
+
+.gallery-item .img-thumbnail-gallery {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: 200px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  display: block;
+  margin: auto; /* Centers the image horizontally */
+  transition: all 0.5s;
+}
+
+.gallery-overlay {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: rgba(255, 254, 254, 0.184);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  visibility: hidden;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+
+.gallery-overlay p,
+.gallery-overlay a {
+  position: relative;
+  z-index: 4;
+}
+
+.gallery-overlay::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 0;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  transition: 50ms height ease 150ms;
+  z-index: 3;
+}
+
+.gallery-overlay::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 0;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  transition: 100ms width ease 200ms;
+  z-index: 3;
+}
+
+.gallery-item:hover .gallery-overlay::before {
+  width: 80%;
+  height: 80%;
+  border-top: 3px solid var(--primary-color);
+  border-right: 3px solid var(--primary-color);
+  transition: width 0.1s ease 0.3s, height 0.1s ease 0.5s;
+}
+
+.gallery-item:hover .gallery-overlay::after {
+  width: 80%;
+  height: 80%;
+  border-bottom: 3px solid var(--primary-color);
+  border-left: 3px solid var(--primary-color);
+  transition: width 0.1s ease 0.6s, height 0.1s ease 0.7s;
+}
+
+.gallery-item div:hover .gallery-overlay {
+  visibility: visible;
+  transform: scale(1);
+}
+
+.gallery-overlay .gallery-magnify-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background: transparent;
+  margin: 0 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.25s;
+  font-size: 15px;
+  color: var(--primary-color);
+  line-height: 40px;
+  cursor: pointer;
+  position: relative;
+}
+.gallery-overlay .gallery-magnify-icon:hover {
+  background: transparent;
+}
+.magnify-icon {
+  position: absolute;
+  left: 30%;
+  bottom: 30%;
+  font-size: 20px;
+}
+.gallery-overlay-content {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+}
+@media (max-width: 600px) {
+  .gallery-overlay {
+    display: none;
+  }
+}
+/* gallery img in hover effect end */

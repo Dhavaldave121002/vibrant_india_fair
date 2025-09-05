@@ -1,0 +1,125 @@
+/* <!-- --- Exhibition Stall Design Section --- --> */
+    .exhibition-stall-design-back-color{
+        background-color: var(--secondary-color);
+        position: relative;
+    }    
+    .exhibition-stall-design-back-color::before{
+        content: "";
+        background-image: url('../images/about-bg-transparent.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        /* filter: blur(2px); */
+    }
+    .exhibition-stall-design-main-body .exhibition-stall-design-sub-box{
+        width: 100%;
+        background-color: transparent;
+    }
+    .exhibition-stall-img-box{
+        max-width: 250px;
+    }
+    .exhibition-stall-img-box .exhibition-stall-img{
+        width: 100%;
+        height: 100%;
+    }
+    .exhibition-carousel-stall-img-box{
+        max-width: 500px;
+    }
+    .exhibition-carousel-stall-img-box .exhibition-carousel-stall-img{
+        width: 100%;
+        height: 100%;
+    }  
+    .exhibition-stall-owl-box{
+        position: relative;
+    }  
+    .exhibition-stall-owl-box .exhibition-stall-btn-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        padding: 0px 15px;
+        top: 50%;
+        z-index: 1;
+        display: none;
+        transform: translateY(-50%);
+    }
+    .exhibition-stall-owl-box:hover .exhibition-stall-btn-box{
+        display: flex;
+    }
+    .exhibition-stall-btn-box .exhibition-stall-prev-next-btn, .exhibition-stall-prev-next-btn{
+        border: none;
+        width: 36px;
+        color: var(--light-color);
+        padding: 5px 10px;
+        border-radius: 20px;
+        background-color: var(--primary-color);
+    }
+    .exhibition-stall-prev-next-btn .exhibition-stall-prev-next-btn-icon{
+        width: 100%;
+        height: 100%;
+    } 
+
+/* <!-- --- End Exhibition Stall Design Section --- --> */
+
+
+.exhibit-benifit-box-img {
+  max-width: 600px;
+}
+.exhibit-benifit-box-img .exhibit-benifit-img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* <!-- --- Started Clutch Simple Mission B2B Buying ---  --> */
+.started-clutch-main-box{
+    padding: 20px 0px 5px 0px;
+}    
+.started-clutch-main-box .started-clutch-back-color-box{
+    background-color: var(--primary-color);
+    position: relative;
+}
+.started-clutch-main-box .started-clutch-back-color-box::before{
+    content: "";
+    background-image: url('../images/hero-fixed.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.started-clutch-img-box {
+    max-width: 500px;
+    margin-top: -10px;
+}
+
+.started-clutch-img-box .started-clutch-img {
+    width: 100%;
+    height: 100%;
+}
+.started-clutch-main-content-box{
+    padding: 20px 10px;
+}
+.started-clutch-main-content-box .started-clutch-text-content{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--light-color);
+    letter-spacing: 1px;
+}
+.started-clutch-text-content .started-clutch-coma-icon{
+    width: 22px;
+    margin-top: -15px;
+}
+
+/* <!-- --- End Started Clutch Simple Mission B2B Buying ---  --> */

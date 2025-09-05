@@ -1,0 +1,148 @@
+/* --- FAQ Section --- */
+ .faq-accordion {
+      width: 100%;
+      max-width: 100%;
+      margin: 0px auto;
+      padding: 0 10px;
+    }
+
+    .faq-accordion .faq-accordion-item {
+      background: var(--primary-color);
+      color: var(--light-color);
+      margin: 15px 0;
+      border-radius: 7px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .faq-accordion-item .faq-accordion-item-header {
+      font-size: 15px;
+      padding: 15px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      letter-spacing: 1px;
+    }
+
+    .faq-accordion-item .faq-accordion-item-header::after {
+      content: "\002B";
+      font-size: 22px;
+    }
+
+    .faq-accordion-item .active::after {
+      content: "\2212";
+    }
+
+    .faq-accordion-item .faq-accordion-item-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
+    }
+
+    .faq-accordion-item-body .faq-accordion-item-body-content {
+      padding: 15px;
+      line-height: 20px;
+      border-top: 1px solid;
+      /* background-color: var(--secondary-color); */
+      border-image: linear-gradient(to right, transparent, var(--secondary-color), transparent) 1;
+    }
+    
+    .faq-accordion-item-body-content .faq-main-content-box {
+        width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .faq-main-content-box .faq-img {
+      max-width: 100px;
+      color: var(--light-color);
+    }
+
+    /* --- Right Part --- */
+    .right-part-message-box{
+      background-color: var(--primary-color);
+      border-radius: 5px;
+      padding: 20px;
+      /* margin-top: 15px; */
+      position: sticky;
+      top: 80px;
+    }
+    .right-part-message-box .right-part-sub-box{
+
+    }
+    .right-part-sub-box .right-part-title{
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--light-color);
+      position: relative;
+      padding: 10px 35px;
+    }
+    .right-part-sub-box .right-part-title::before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 30px;
+      height: 2px;
+      left: 0px;
+      background-color: var(--light-color);
+    }
+    .right-part-sub-box .right-part-paragraph{
+      font-size: 12px;
+      color: var(--light-color);
+    }
+  .right-main-img-box .right-img-box {
+    max-width: 100%;
+    position: relative;
+}
+
+.right-img-box .right-part-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.right-main-img-box .right-img-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(0deg, var(--primary-color) 0%, transparent 70%);
+    z-index: 1;
+}
+.right-img-box .right-message-link-box{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.right-message-link-box .right-message-icon-box{
+  max-width: 45px;
+  z-index: 1;
+}
+.right-message-icon-box .right-message-icon{
+  width: 100%;
+  height: 100%;
+}
+.right-message-link-box .right-email-box{
+  font-size: 14px;
+  color: var(--light-color);
+  z-index: 1;
+}
+.right-email-box .right-message-heading{
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--light-color);
+}
+.right-email-box .right-part-email-link{
+  font-size: 12px;
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+    /* --- End Right Part --- */
+    /* --- End FAQ Section --- */

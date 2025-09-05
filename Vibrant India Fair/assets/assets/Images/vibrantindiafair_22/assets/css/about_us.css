@@ -1,0 +1,90 @@
+/* --- About Company Details Section --- */
+.about-content-back-img{
+    background-image: url('../images/about-bg-transparent.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.about-content-back-img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000042;
+    background-image: url('../images/icon/content-marketing-cta-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.about-company-details-main-box{
+    padding: 10px;
+}
+
+ /* --- End About Company Details Section --- */
+ /* --- Welcome Section --- */
+ .about-welcome-section{
+    padding: 5px;
+    /* background-color: var(--secondary-color); */
+ }
+.about-welcome-img-box{
+    max-width: 500px;
+}
+.about-welcome-img{
+    width: 100%;
+    height: 100%;
+}
+ .about-welcome-content-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .wecome-headind-line-box{
+    max-width: 60%;
+ }
+ .wecome-headind-line-icon{
+    width: 100%;
+    height: 100%;
+ }
+ /* --- End Welcome Section --- */
+
+ /* Fix Image and Content ---  */
+ .about-img-fix-content-box{
+    padding: 20px 0px;
+}
+.about-back-img{
+    background-image: url('../images/hero-fixed.png');
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about-back-img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #277474b0;
+}
+.about-left-img-box{
+    max-width: 500px;
+}
+.about-left-img-box .about-left-img{
+    width: 100%;
+    height: 100%;
+}
+/* .about-fix-details-box{
+    background-color: var(--secondary-color);
+} */
+
+ /* --- End Fix Image and Content --- */

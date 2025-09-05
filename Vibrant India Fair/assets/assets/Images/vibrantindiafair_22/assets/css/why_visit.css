@@ -1,0 +1,150 @@
+/* --- Why Exhibit Section --- */
+.why-visit-back-main-body{
+    position: relative;
+    padding: 10px;
+}
+.why-visit-back-main-body::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 20%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 0px 20px 0px 0px;
+}
+.why-visit-owl-main-box{
+    position: relative;
+}
+.why-visit-owl-img-box{
+    max-width: 500px;
+}
+.why-visit-owl-img-box .why-visit-owl-img{
+    width: 100%;
+    height: 100%;
+}
+.why-visit-owl-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    width: 100%;
+    top: 40%;
+    position: absolute;
+    padding: 0px 15px;
+    z-index: 1;
+}
+.why-visit-owl-main-box:hover .why-visit-owl-btn{
+    display: flex;
+}
+.why-visit-owl-btn .why-visit-prev-next-btn{
+    border: none;
+    width: 33px;
+    color: var(--light-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
+.why-visit-prev-next-btn-icon{
+    width: 100%;
+    height: 100%;
+}
+
+/* Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+.why-visit-back-main-body::before{
+    background-color: transparent;
+}
+.why-visit-owl-main-box{
+    position: relative;
+    padding: 10px;
+}
+.why-visit-owl-main-box::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 30%;
+    top: 0;
+    left: -25px;
+    bottom: 0;
+    border-radius: 0px 20px 0px 0px;
+}
+}
+
+/* Medium Devices (769px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .why-visit-back-main-body::before{
+    background-color: var(--secondary-color);
+}
+}
+/* --- End Why Exhibit Section --- */
+
+/* --- Digital Everything Why Visit an Event --- */
+.why-visit-digital-details-body{
+    padding: 10px;
+    position: relative;
+}
+ .why-visit-digital-details-body::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background-image: url('../images/Pattern-Bg-1.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+} 
+.why-visit-digital-details-body .why-visit-digital-content-box{
+    padding: 10px;
+}
+.why-visit-main-etf-icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why-visit-main-etf-icon-box .why-visit-etf-icon-box{
+    max-width: 50px;
+}
+.why-visit-etf-icon-box .why-visit-etf-icon{
+    width: 100%;
+    height: 100%;
+}
+/* --- End Digital Everything Why Visit an Event --- */
+
+
+/* --- Creating Meanigful Experiences --- */
+.creating-meaning-back-body{
+    background-color: var(--primary-color);
+    padding: 30px 10px;
+}
+.creating-meading-primary-heading{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--light-color);
+    padding: 5px 0px;
+    position: relative;
+}
+.creating-meading-primary-heading::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.creating-meaning-primary-title{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--light-color);
+    padding: 10px 0px;
+}
+ /* --- End Creating Meanigful Experiences --- */

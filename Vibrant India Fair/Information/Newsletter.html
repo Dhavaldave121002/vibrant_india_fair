@@ -547,19 +547,15 @@ Stay ahead in the gifting industry with the latest trends, expert insights, and 
        </div>
     </div>
 
-<div id="main-footer"></div>
-
-<!-- Load footer -->
-<script>
-  fetch('../footer.html')
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById('main-footer').innerHTML = html;
-    });
-</script>
+<div id="footer"></div>
+   <script>
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
 <!-- footer area end -->
 <!-- scroll-top -->
-<a href="#" id="scroll-top"><i class="far fa-arrow-up"></i></a>
+<!-- <a href="#" id="scroll-top"><i class="far fa-arrow-up"></i></a> -->
 <!-- scroll-top end -->
 		    
 <script type="speculationrules">

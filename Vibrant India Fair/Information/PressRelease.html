@@ -591,86 +591,15 @@ Get the latest updates, key announcements, and industry highlights from Gifts Wo
        </div>
     </div>
 
-<footer class="footer-area">
-   <div class="footer-widget">
-      <div class="container">
-         <div class="row footer-widget-wrapper pt-100 pb-70">
-            <div class="col-md-6 col-lg-5">
-               <div class="footer-widget-box about-us">
-                  <a href="#" class="footer-logo">
-                  <img src="../assets/assets/Images/VIFair.png" alt="">
-                  </a>
-                  <p class="mb-3">
-                     MEX Exhibitions Pvt. Ltd. is an international exhibition company with a strong presence of over four decades in the advertising industry, over 28 years in publishing &amp; 23 years in exhibitions. The company has produced more than 100 market-leading trade exhibitions for various segments in addition to publishing various magazines &amp; advertising trade directories of repute. Successful exhibitions are conducted all over India, Dubai, Singapore, Canada and Thailand.
-For more details, visit our website at: www.mexexhibits.com
-
-                  </p>
-               </div>
-            </div>
-            <div class="col-md-6 col-lg-2">
-               <div class="footer-widget-box list">
-                  <h4 class="footer-widget-title">Quick Links</h4>
-                  <ul class="footer-list">
-                     <li><a href="https://giftsworldexpo.com/blr/about-the-show/"><i class="fas fa-caret-right"></i> About Us</a></li>
-                     <li><a href="https://giftsworldexpo.com/blr/blogs"><i class="fas fa-caret-right"></i> Blogs</a></li>
-					 <li><a href="https://giftsworldexpo.com/blr/contact-us"><i class="fas fa-caret-right"></i> Contact Us</a></li>
-                     <li><a href="https://giftsworldexpo.com/blr/testimonials"><i class="fas fa-caret-right"></i> Testimonials</a></li>
-                     <li><a href="https://giftsworldexpo.com/blr/terms-conditions"><i class="fas fa-caret-right"></i> Terms &amp; Conditions</a></li>
-                     <li><a href="/privacypolicy.html"><i class="fas fa-caret-right"></i> Privacy Policy</a></li>
-                  </ul>
-               </div>
-            </div>
-            <div class="col-md-6 col-lg-2">
-               <div class="footer-widget-box list">
-                  <h4 class="footer-widget-title">Our Social</h4>
-                  <ul class="footer-list social">
-                     <li><a href="https://www.facebook.com/giftsworldexpo"><i class="fab fa-facebook"></i> Facebook</a></li>
-                     <li><a href="https://x.com/giftsworldexpo"><i class="fab fa-x-twitter"></i> Twitter</a></li>
-                     <li><a href="https://www.instagram.com/giftsworldexpo/"><i class="fab fa-instagram"></i> Instagram</a></li>
-                     <li><a href="https://www.youtube.com/@Gifts_world_expo"><i class="fab fa-youtube"></i> Youtube</a></li>
-                     <li><a href="https://www.linkedin.com/company/giftsworld-expo/"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
-                  </ul>
-               </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-               <div class="footer-widget-box list">
-                  <h4 class="footer-widget-title">Get In Touch</h4>
-                  <ul class="footer-contact">
-                     
-                     <li> <i class="far fa-map-marker-alt"></i>  9, Sant Nagar, East of Kailash, New Delhi-110065, India</li>
-					  <li><a href="tel:+21236547898"><i class="far fa-phone"></i> + 91-11-46464848</a></li>
-                     <li><a href="#"><i class="far fa-envelope"></i><span class="__cf_email__" data-cfemail="">info@mexexhibits.com</span></a></li>
-                  </ul>
-                  <div class="footer-request">
-                     <a href="https://giftsworldexpo.com/blr/visitor-online-registration/" class="theme-btn">Register as Visitor<i class="fas fa-arrow-right"></i></a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="container">
-      <div class="copyright">
-         <div class="row">
-            <div class="col-md-6 align-self-center">
-               <p class="copyright-text">
-                  © Copyright <span id="date">2025</span> <a href="#"> Gifts World Expo </a> All Rights Reserved.
-               </p>
-            </div>
-            <div class="col-md-6 align-self-center">
-               <ul class="footer-menu">
-                  <li><a href="https://giftsworldexpo.com/blr/terms-conditions">Terms &amp; Conditions</a></li>
-                  <li><a href="/privacypolicy.html">Privacy Policy</a></li>
-               </ul>
-            </div>
-         </div>
-      </div>
-   </div>
-
-</footer>
+<div id="footer"></div>
+   <script>
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
 <!-- footer area end -->
 <!-- scroll-top -->
-<a href="#" id="scroll-top"><i class="far fa-arrow-up"></i></a>
+<!-- <a href="#" id="scroll-top"><i class="far fa-arrow-up"></i></a> -->
 <!-- scroll-top end -->
 		    
 <script type="speculationrules">

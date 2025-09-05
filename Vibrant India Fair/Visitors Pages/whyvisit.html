@@ -535,83 +535,12 @@ If you want to keep up to date on the latest trends and fashions, new designs an
        </div>
     </div>
 
-<footer class="footer-area">
-   <div class="footer-widget">
-      <div class="container">
-         <div class="row footer-widget-wrapper pt-100 pb-70">
-            <div class="col-md-6 col-lg-5">
-               <div class="footer-widget-box about-us">
-                  <a href="#" class="footer-logo">
-                  <img src="../assets/assets/Images/VIFair.png" alt="">
-                  </a>
-                  <p class="mb-3">
-                     Vibrent India Fair is India's premier trade fair dedicated to gifts, home decor, and lifestyle products. The event serves as a dynamic platform for manufacturers, suppliers, and retailers to showcase their latest offerings, connect with industry professionals, and explore new business opportunities. With a diverse range of exhibitors and a focus on innovation and trends, Vibrent India Fair is the go-to destination for anyone involved in the gifting and lifestyle industry.
-
-                  </p>
-               </div>
-            </div>
-            <div class="col-md-6 col-lg-2">
-               <div class="footer-widget-box list">
-                  <h4 class="footer-widget-title">Quick Links</h4>
-                  <ul class="footer-list">
-                     <li><a href="../index.html"><i class="fas fa-caret-right"></i> Home</a></li>
-                     <li><a href="../AboutUs Pages/aboutvibrentindia.html"><i class="fas fa-caret-right"></i> About Us</a></li>
-					 <li><a href="https://giftsworldexpo.com/blr/contact-us"><i class="fas fa-caret-right"></i> Contact Us</a></li>
-                     <li><a href="../Gallery Pages/photogallery.html"><i class="fas fa-caret-right"></i> Gallery</a></li>
-                     <li><a href="/privacypolicy.html"><i class="fas fa-caret-right"></i> Privacy Policy</a></li>
-                  </ul>
-               </div>
-            </div>
-            <div class="col-md-6 col-lg-2">
-               <div class="footer-widget-box list">
-                  <h4 class="footer-widget-title">Our Social</h4>
-                  <ul class="footer-list social">
-                     <li><a href="https://www.facebook.com/people/Vibrant-India-Tech/61569927776450/"><i class="fab fa-facebook"></i> Facebook</a></li>
-                     <li><a href="https://www.instagram.com/vibrantindiatech/"><i class="fab fa-instagram"></i> Instagram</a></li>
-                     <li><a href="https://in.linkedin.com/company/vibrant-india-tech"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
-                  </ul>
-               </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-        <div class="footer-widget-box list">
-            <h4 class="footer-widget-title">Get In Touch</h4>
-            <ul class="footer-contact">
-                <li>Fifth Floor, HillTown Impressa, 515, Ahmedabad, Gujarat 380049</li>
-                <li><a href="tel:+919924488938">+ 91-9924488938</a></li>
-               <li>
-    <a href="mailto:info@vibrantindiafair.com" title="Click to email us" aria-label="Email info@vibrantindiafair.com">
-        <span class="__cf_email__" data-cfemail="info@vibrantindiafair.com">info@vibrantindiafair.com</span>
-    </a>
-</li>
-            </ul>
-            <div class="footer-request">
-                <a href="https://giftsworldexpo.com/blr/visitor-online-registration/" class="theme-btn">Register as Visitor<i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </div>
-
-         </div>
-      </div>
-   </div>
-   <div class="container">
-      <div class="copyright">
-         <div class="row">
-            <div class="col-md-6 align-self-center">
-               <p class="copyright-text">
-                  © Copyright <span id="date">2025</span> <a href="#">Vibrent India Fair</a> All Rights Reserved.
-               </p>
-            </div>
-            <div class="col-md-6 align-self-center">
-               <ul class="footer-menu">
-                  <li><a href="https://giftsworldexpo.com/blr/terms-conditions">Terms &amp; Conditions</a></li>
-                  <li><a href="/privacypolicy.html">Privacy Policy</a></li>
-               </ul>
-            </div>
-         </div>
-      </div>
-   </div>
-
-</footer>
+ <div id="footer"></div>
+   <script>
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
 <!-- footer area end -->
 <!-- scroll-top -->
 <!-- <a href="#" id="scroll-top"><i class="far fa-arrow-up"></i></a> -->

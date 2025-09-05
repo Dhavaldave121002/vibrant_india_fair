@@ -1970,17 +1970,12 @@
      </div>
   </div>
 </div>
-<div id="main-footer"></div>
-
-<!-- Load footer -->
-<script>
-  fetch('../footer.html')
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById('main-footer').innerHTML = html;
-    });
-</script>
-<!-- Bootstrap Bundle JS (includes Popper) -->
+<div id="footer"></div>
+   <script>
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script><!-- Bootstrap Bundle JS (includes Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
 </body>

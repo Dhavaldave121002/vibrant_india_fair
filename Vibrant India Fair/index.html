@@ -550,15 +550,13 @@
 </style>
 </head >
 <body>
- <!-- <div id="main-header"></div>
-<script>
-  fetch('../header.html')
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById('main-header').innerHTML = data;
-    });
-</script> -->
-<script src="load-header.js"></script>
+ <div id="header"></div>
+   <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
+
 
 <style>
     .col-lg-6.popupdiv {

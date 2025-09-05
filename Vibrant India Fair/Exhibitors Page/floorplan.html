@@ -160,7 +160,12 @@
 
 <!-- header area -->
 
-     <script src="../load-header.js"></script>
+ <div id="header"></div>
+   <script>
+    fetch("../header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
 <!-- header area end -->
 
  <div class="site-breadcrumb" style="background-image: url('../assets/assets/Images/floor-plan-design.png'); background-size: cover; background-position: center; padding: 100px 0 50px 0;">

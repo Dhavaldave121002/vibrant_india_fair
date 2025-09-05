@@ -179,7 +179,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <body>
 
 <!-- header area -->
-<script src="../load-header.js"></script>
+ <div id="header"></div>
+   <script>
+    fetch("../header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
 
 <!-- header area end -->
 

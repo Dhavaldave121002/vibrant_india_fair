@@ -157,7 +157,12 @@
 
 <body>
 
-<script src="../load-header.js"></script>
+ <div id="header"></div>
+   <script>
+    fetch("../header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
 <style>
 h2.large-inside-head {
     font-size: 70px;

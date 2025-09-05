@@ -169,7 +169,7 @@
 
 <!-- header area end -->
 
- <div class="site-breadcrumb" style="background-color:#000;">
+ <div class="site-breadcrumb" style="background-image: url('../assets/assets/Images/visiting-hours-banner.jpg');">
     <div class="container">
        <h2 class="large-inside-head">VISITING HOURS
 </h2>
@@ -395,100 +395,12 @@
  
 
 <!-- footer area -->
-<div class="about-area py-80">
-  <div class="container">
-     <div class="schedule-single-wrap">
-        <div class="row g-4">
-           <div class="col-xl-12 col-lg-12">
-              <div class="row align-items-center">
-                 <div class="col-lg-3">
-                    <div class="widget">
-                       <h4 class="widget-title">Download</h4>
-                       <div class="schedule-info-list">
-                          <div class="adobe-download-button-container">
-                             <button class="adobe-pdf-download">
-                                <table>
-                                   <tbody><tr>
-                                      <td><img src="https://giftsworldexpo.com/blr/wp-content/themes/mexgroup/assets/img/download.png"></td>
-                                      <td>
-                                         <p><a href="https://giftsworldexpo.com/blr/exhibitor-prospectus/">Exhibitor Prospectus <br><span>Download</span></a></p>
-                                      </td>
-                                   </tr>
-                                </tbody></table>
-                             </button>
-                          </div>
-                          <div class="adobe-download-button-container">
-                             <button class="adobe-pdf-download">
-                                <table>
-                                   <tbody><tr>
-                                      <td><img src="https://giftsworldexpo.com/blr/wp-content/themes/mexgroup/assets/img/download.png"></td>
-                                      <td>
-                                         <p><a href="https://giftsworldexpo.com/blr/post-show-report/">Post Show Report 2024 <br><span>Download</span></a></p>
-                                      </td>
-                                   </tr>
-                                </tbody></table>
-                             </button>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="col-lg-6">
-                    <div class="hero-content">
-                       <div class="hero-date" data-animation="fadeInDown" data-delay=".25s" style="animation-delay: 0.25s;">
-                          <div class="date-icon">
-                             <i class="fas fa-calendar-alt"></i>
-                          </div>
-                          <div class="date-text">
-                             <h1>11-13  <span>Sep 2025</span></h1> 
-                          </div>
-                       </div>
-                       <div class="about-item">
-                          <div class="address-icon">
-                             <i class="fas fa-map-marker-alt"></i>
-                          </div>
-                          <div class="address-text">
-                             <h4>Tripura Vasini, Palace Grounds, Bengaluru</h4>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="col-lg-3">
-                    <div class="widget">
-                       <h4 class="widget-title">Register Now</h4>
-                       <div class="schedule-info-list">
-                          <div class="adobe-download-button-container">
-                             <button class="adobe-pdf-download">
-                                <table>
-                                   <tbody><tr>
-                                      <td><img src="https://giftsworldexpo.com/blr/wp-content/themes/mexgroup/assets/img/register.png"></td>
-                                      <td>
-                                         <p><a href="https://giftsworldexpo.com/blr/visitor-online-registration/">VISITOR PRE-REGISTRATION</a></p>
-                                      </td>
-                                   </tr>
-                                </tbody></table>
-                             </button>
-                          </div>
-                          <div class="adobe-download-button-container">
-                             <button class="adobe-pdf-download">
-                                <table>
-                                   <tbody><tr>
-                                      <td><img src="https://giftsworldexpo.com/blr/wp-content/themes/mexgroup/assets/img/register.png"></td>
-                                      <td>
-                                         <p><a href="https://giftsworldexpo.com/blr/enquire-to-exhibit/">BOOK YOUR BOOTH</a></p>
-                                      </td>
-                                   </tr>
-                                </tbody></table>
-                             </button>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </div>
-  </div>
-</div>
+<div id="schedule"></div>
+   <script>
+    fetch("../schedule-section.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("schedule").innerHTML = data);
+  </script>
 <div class="about-area py-60" style="background-color: #ffddeb;">
   <div class="container">
      <div class="row">

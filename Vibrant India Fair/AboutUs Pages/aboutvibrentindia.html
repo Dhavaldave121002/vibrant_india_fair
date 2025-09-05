@@ -396,7 +396,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
   });
 </script>
 
-
+<div id="schedule"></div>
+   <script>
+    fetch("../schedule-section.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("schedule").innerHTML = data);
+  </script>
 <div id="footer"></div>
    <script>
     fetch("../footer.html")

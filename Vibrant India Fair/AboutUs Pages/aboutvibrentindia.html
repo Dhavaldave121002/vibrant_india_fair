@@ -402,6 +402,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
       .then(res => res.text())
       .then(data => document.getElementById("schedule").innerHTML = data);
   </script>
+  <div id="countdown"></div>
+   <script>
+    fetch("../countdown-section.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("countdown").innerHTML = data);
+  </script>
 <div id="footer"></div>
    <script>
     fetch("../footer.html")

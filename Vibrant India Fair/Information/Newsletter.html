@@ -405,59 +405,19 @@ Stay ahead in the gifting industry with the latest trends, expert insights, and 
       .then(res => res.text())
       .then(data => document.getElementById("schedule").innerHTML = data);
   </script>
-<div class="about-area py-60" style="background-color: #ffddeb;">
-  <div class="container">
-     <div class="row">
-        <div class="col-lg-10 col-xl-8 mx-auto">
-           <div class="coming-wrap">
-              <div class="coming-content">
-                 <div class="coming-info">
-                    <h1>Chennai  Edition 2025</h1>
-                    <p>Your most important date. Don't miss it!</p>
-                    <div class="coming-countdown-wrap">
-                       <div data-countdown="2025/09/11 10:00:00" class="coming-countdown"><div class="time-wrap"><span class="time"><span>8</span><span class="unit">Days</span></span> <span class="divider">:</span> <span class="time"><span>16</span><span class="unit">Hours</span></span> <span class="divider">:</span> <span class="time"><span>57</span><span class="unit">Mins</span></span> <span class="divider">:</span> <span class="time"><span>19</span><span class="unit">Secs</span></span></div></div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </div>
-  </div>
-</div>
+<div id="countdown"></div>
+   <script>
+    fetch("../countdown-section.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("countdown").innerHTML = data);
+  </script>
 
-<div class="team-area py-60" style="background-color:#F8F9FE">
-       <div class="container">
-          <div class="col-lg-12">
-             <div class="site-heading text-center wow fadeInDown" data-wow-delay=".25s" style="visibility: hidden; animation-delay: 0.25s; animation-name: none;">
-                <h2 class="site-title large"> Never Miss An Update!</h2>
-             </div>
-          </div>
-          <div class="row align-items-center">
-             <div class="col-lg-3">
-             </div>
-             <div class="col-lg-6">
-                <div class="footer-newsletter">
-                   <div class="subscribe-form">
-                         
-<div class="wpcf7 js" id="wpcf7-f10202-o2" lang="en-US" dir="ltr" data-wpcf7-id="10202">
-<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/blr/newsletter/#wpcf7-f10202-o2" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
-<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="10202"><input type="hidden" name="_wpcf7_version" value="6.1.1"><input type="hidden" name="_wpcf7_locale" value="en_US"><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f10202-o2"><input type="hidden" name="_wpcf7_container_post" value="0"><input type="hidden" name="_wpcf7_posted_data_hash" value=""><input type="hidden" name="_wpcf7dtx_version" value="5.0.3"><input type="hidden" name="_wpcf7_recaptcha_response" value="0cAFcWeA5bQ27kAyQ75w4s8CklYOqJ47W9a63gb4UnV_NCJ2ZtOnjorfnpacJ5P-ND0s25leyrJQ0tOwzyCikFhN_tgnoglV62bqsfIxduYzmpGeHXoFv1U3sWfs_PL3H7wbDWFsuMZySs6VcaSiwkEAE_DUU3qQxearWiMrNhJlG0VTw117MJwsos5jRDARlQUXM_ijmkc_V0ztRQUAqxIDhtrvRHNkvEnftvGMeOeWvcTyDA1dI1u-Z5H_50J2-cBXVtyZGc-oIneXTU2QGHV5pRX3O_FHkwvY4SL1Jy1QNi2J4RNXQgsa7ezoLO9iSfNty8qwFx93Hqb5Ci_-NWEotacApn9lWbJwR11-zbyeqeUqNWsuWkRV1Nauanu0wDuyf0tAPYovZRwaCeJVj0p8u0M97daUZgFPI1Sw2efXoRZ62IUl6dnJQ34Csk2pXbEZaRIVOxfyfWzLPgIu83fy8jlNURFhD19nxZA0dF8KDQ1Pu3VTdhkwUEBKzYcCA5e2Tfi35AK7SDdTIdlDVwE5zYpilvaNcEzek6pA6BOYcqOFyTrJY_snrLVKXH37Rk0v8BnHftG3NPxgb8-te5aBpguTdRmZLSiBz6muGq5Wq9iLzUTYWu9puWxbzt5FQJxbpBGRcs26wdf9hzAp3J6A7TprB1iA_-lX7BRe88qGd4AJK6JA1aQOxVJlnmUxM9uG3prV2vqlzemPxHKrL4T5sr00jSEaO4M5xeHnVvcdAT8Yhao5CPHQA1jokh1QFfgU9Ryao4xQK620N1wjdhY_lCzF4QH6QKzUEZSjXp4CZE8adHxefNtDOItjABtTHn7-FtEK8p3EAx-RRHpatgh0PhewmoRgaw6g">
-</fieldset>
-<div class="form-group">
-	<p><span class="wpcf7-form-control-wrap" data-name="Email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Enter your email" value="" type="email" name="Email"></span><button class="theme-btn" type="submit"><span class="far fa-paper-plane"></span> Subscribe Now</button>
-	</p>
-</div><div class="wpcf7-response-output" aria-hidden="true"></div>
-</form>
-</div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-3">
-             </div>
-          </div>
-       </div>
-    </div>
+<div id="countdown"></div>
+   <script>
+    fetch("../countdown-section.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("countdown").innerHTML = data);
+  </script>
 
 <div id="footer"></div>
    <script>

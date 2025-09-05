@@ -351,59 +351,14 @@ gsap.utils.toArray('.gsap-benefit').forEach((card,i)=>{
       .then(res => res.text())
       .then(data => document.getElementById("schedule").innerHTML = data);
   </script>
-<div class="about-area py-60" style="background-color: #ffddeb;">
-  <div class="container">
-     <div class="row">
-        <div class="col-lg-10 col-xl-8 mx-auto">
-           <div class="coming-wrap">
-              <div class="coming-content">
-                 <div class="coming-info">
-                    <h1>Bengaluru Edition 2025</h1>
-                    <p>Your most important date. Don't miss it!</p>
-                    <div class="coming-countdown-wrap">
-                       <div data-countdown="2025/09/11 10:00:00" class="coming-countdown"><div class="time-wrap"><span class="time"><span>9</span><span class="unit">Days</span></span> <span class="divider">:</span> <span class="time"><span>16</span><span class="unit">Hours</span></span> <span class="divider">:</span> <span class="time"><span>03</span><span class="unit">Mins</span></span> <span class="divider">:</span> <span class="time"><span>55</span><span class="unit">Secs</span></span></div></div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </div>
-  </div>
-</div>
+<div id="countdown"></div>
+   <script>
+    fetch("../countdown-section.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("countdown").innerHTML = data);
+  </script>
 
-<div class="team-area py-60" style="background-color:#F8F9FE">
-       <div class="container">
-          <div class="col-lg-12">
-             <div class="site-heading text-center wow fadeInDown" data-wow-delay=".25s" style="visibility: hidden; animation-delay: 0.25s; animation-name: none;">
-                <h2 class="site-title large"> Never Miss An Update!</h2>
-             </div>
-          </div>
-          <div class="row align-items-center">
-             <div class="col-lg-3">
-             </div>
-             <div class="col-lg-6">
-                <div class="footer-newsletter">
-                   <div class="subscribe-form">
-                         
-<!-- <div class="wpcf7 js" id="wpcf7-f10202-o1" lang="en-US" dir="ltr" data-wpcf7-id="10202"> -->
-<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/blr/why-exhibit/#wpcf7-f10202-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
-<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="10202"><input type="hidden" name="_wpcf7_version" value="6.1.1"><input type="hidden" name="_wpcf7_locale" value="en_US"><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f10202-o1"><input type="hidden" name="_wpcf7_container_post" value="0"><input type="hidden" name="_wpcf7_posted_data_hash" value=""><input type="hidden" name="_wpcf7dtx_version" value="5.0.3"><input type="hidden" name="_wpcf7_recaptcha_response" value="0cAFcWeA4J5_EK2cbBf14MarJvXOYK9T2owXT3_FpyD2tdCEGi9RCzTXDv5e-MoQyb3wII2HOLsutudMTjjH3vex5vzIjxoXJbv3ZSy30Ov0t6ljcvEZxWlz2b5eorkHn6onJzcg1O0vxCMO19P8NDeT939WxpCHqlNASRQ_5EUsCwxtjP0zmUMV2a1bfRCTTCAylxcyC4_uiec1tH98Bea9CWq2D1s8Yz31cRaZtLGygEv0Rl0PbuQj3IYk4NC7zCi95-yBcx0F64hsNEJctBhdUiie_FKbl3kaKRnVPPZYBhUcbx7eNq58_kWTLANfy8Xj-YnpHUBHR8DS93JmnZC3FsnYGFdhQZ7SqePuNoxUln0hp3ytpV9KqQUvKEIu7h6OcUvMsxNC98FV2kYJ_7QiWRQOhXbhVj-UcBoujxgd6blUR5eJ4PXYAg7SnqoO2HiYFCGHs4jjzfYB0IqzDzzoT_ji7pIbUPRqKV-vSffxkeaFSaFO4Jqt6ZxXYaASQnOVZnpJYl82dmdLpCsCtEo1P7WYvryrUercRJWn8ifIcSdzbO2tPmUL8OuJCio8lfeR7enox8ZoGvH5579cJ1oMEL4H7zkIHV6TbNC91Qj8c-EEVytdD_e3jyos5jlzd88EhmNt3PF35ONiUcnwtIsMA0SnJt0M30dycEXsPOC7yfEoJoe4FcqRluHb0BDmXereNuTCzYTKd73LS0shSPkhZ6Lvwue3nbhGb0UDtXao8wUdlQh_dxtEYklOnwtAZ5IbX2W19Hmi0cjwVNmn8SWwW7r-wrpbmNkqx36fJX7gN2JZqMMfNxO3oq0JoVXwfwPlc1MOUhnFSA">
-</fieldset>
-<div class="form-group">
-    <p><span class="wpcf7-form-control-wrap" data-name="Email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Enter your email" value="" type="email" name="Email"></span><button class="theme-btn" type="submit"><span class="far fa-paper-plane"></span> Subscribe Now</button>
-    </p>
-</div><div class="wpcf7-response-output" aria-hidden="true"></div>
-</form>
-</div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-3">
-             </div>
-          </div>
-       </div>
-    </div>
+
 
 <div id="footer"></div>
    <script>

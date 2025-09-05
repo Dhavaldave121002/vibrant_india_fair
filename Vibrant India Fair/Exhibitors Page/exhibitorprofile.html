@@ -663,7 +663,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
             });
         });
     </script>
-</body><br>
+
 
 <div id="schedule"></div>
    <script>
@@ -671,27 +671,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
       .then(res => res.text())
       .then(data => document.getElementById("schedule").innerHTML = data);
   </script>
-<div class="about-area py-60" style="background-color: #ffddeb;">
-  <div class="container">
-     <div class="row">
-        <div class="col-lg-10 col-xl-8 mx-auto">
-           <div class="coming-wrap">
-              <div class="coming-content">
-                 <div class="coming-info">
-                    <h1>Chennai  Edition 2025</h1>
-                    <p>Your most important date. Don't miss it!</p>
-                    <div class="coming-countdown-wrap">
-                       <div data-countdown="2025/09/11 10:00:00" class="coming-countdown"><div class="time-wrap"><span class="time"><span>8</span><span class="unit">Days</span></span> <span class="divider">:</span> <span class="time"><span>16</span><span class="unit">Hours</span></span> <span class="divider">:</span> <span class="time"><span>57</span><span class="unit">Mins</span></span> <span class="divider">:</span> <span class="time"><span>19</span><span class="unit">Secs</span></span></div></div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </div>
-  </div>
-</div>
+<div id="countdown"></div>
+   <script>
+    fetch("../countdown-section.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("countdown").innerHTML = data);
+  </script>
 
-<div class="team-area py-60" style="background-color:#F8F9FE">
+<!-- <div class="team-area py-60" style="background-color:#F8F9FE">
        <div class="container">
           <div class="col-lg-12">
              <div class="site-heading text-center wow fadeInDown" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInDown;">
@@ -723,8 +710,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
              </div>
           </div>
        </div>
-    </div>
-
+    </div> -->
 <!-- footer area -->
 <div id="footer"></div>
    <script>
@@ -737,6 +723,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <!-- <a href="#" id="scroll-top" class=""><i class="far fa-arrow-up"></i></a> -->
 <!-- scroll-top end -->
 		    
+
 <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/blr\/*"},{"not":{"href_matches":["\/blr\/wp-*.php","\/blr\/wp-admin\/*","\/blr\/wp-content\/uploads\/*","\/blr\/wp-content\/*","\/blr\/wp-content\/plugins\/*","\/blr\/wp-content\/themes\/mexgroup\/*","\/blr\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
@@ -789,6 +776,7 @@ var wpcf7r = {"ajax_url":"https:\/\/giftsworldexpo.com\/blr\/wp-admin\/admin-aja
     
 /* ]]> */
 </script>
+
 <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6Le5ErAUAAAAABQzWYnITsE6EsuyLJ6_c7XI0L6U&amp;ver=3.0" id="google-recaptcha-js"></script>
 <script type="text/javascript" src="https://giftsworldexpo.com/blr/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
 <script type="text/javascript" id="wpcf7-recaptcha-js-before">

@@ -1,6 +1,6 @@
 // Dynamically load the header from outside the folder
-fetch("/header.html")
-  .then(response => {   
+fetch("Headers.html")
+  .then(response => {
     if (!response.ok) {
       throw new Error("Failed to load header");
     }
